@@ -1,0 +1,17 @@
+# python
+.venv
+*__pycache__
+
+# dependencies
+*node_modules
+
+# env
+.env
+
+# scripts
+scripts
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
