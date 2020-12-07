@@ -3,28 +3,134 @@ import icFilter from "../Assets/icFilter.svg";
 import icNext from "../Assets/next.svg";
 import icPrev from "../Assets/prev.svg";
 import searchTable from "../Assets/icSearchTable.svg";
-
 import backgray from "../Assets/backgray.svg";
+import { useQuery } from "urql";
 
-const dataKelompok = [
-  "Nama Kelompok Tani",
-  "Kode Kelompok",
-  "Komoditas Utama",
-  "Kabupaten/Kota",
-  "Kecamatan",
-  "Kelurahan/Desa",
-  "Posisi Geografis",
+const databaseKel = `query MyQuery {
+  disbun_tani(limit: 10) {
+    nama_kelompok_tani
+    kode_kelompok
+    komoditas_utama
+    kab_kot
+    kec
+    kel
+    latitude
+    longitude
+  }
+}`;
+const dataKelembagaan = `query MyQuery {
+  disbun_tani(limit: 10) {
+    nama_kelompok_tani
+    kode_kelompok
+    komoditas_utama
+    kab_kot
+    kec
+    kel
+    jumlah_total_anggota
+    tahun_berdiri
+    kelas_kelompok
+    sk_pembentukan
+    akta_notaris
+    ahu
+    prestasi_kabupaten
+    prestasi_provinsi
+    prestasi_nasional
+    prestasi_internasional
+    nama_koperasi
+  }
+}`;
+
+const listKolom = [
+  {
+    name: "Data Base Kelompok",
+    head: [
+      "Nama Kelompok Tani",
+      "Kode Kelompok",
+      "Komoditas Utama",
+      "Kabupaten/Kota",
+      "Kecamatan",
+      "Kelurahan/Desa",
+      "Posisi Geografis",
+    ],
+    column: [
+      "nama_kelompok_tani",
+      "kode_kelompok",
+      "komoditas_utama",
+      "kab_kot",
+      "kec",
+      "kel",
+      "latitude",
+      "longitude",
+    ],
+    data: databaseKel,
+  },
+  {
+    name: "Kelembagaan Kelompok",
+    head: [
+      "Nama Kelompok Tani",
+      "Kode Kelompok",
+      "Komoditas Utama",
+      "Kabupaten/Kota",
+      "Kecamatan",
+      "Kelurahan/Desa",
+      "Anggota",
+      "Tahun Berdiri",
+      "Kelas",
+      "Legalitas",
+      "Prestasi",
+      "Koprasi",
+    ],
+    column: [
+      "nama_kelompok_tani",
+      "kode_kelompok",
+      "komoditas_utama",
+      "kab_kot",
+      "kec",
+      "kel",
+      "jumlah_total_anggota",
+      "tahun_berdiri",
+      "kelas_kelompok",
+      "sk_pembentukan",
+      "akta_notaris",
+      "ahu",
+      "prestasi_kabupaten",
+      "prestasi_provinsi",
+      "prestasi_nasional",
+      "prestasi_internasional",
+      "nama_koperasi",
+    ],
+    data: dataKelembagaan,
+  },
 ];
-export default function Table() {
+
+export default function Table({ jenis }) {
   const [pageSize, setPageSize] = React.useState(10);
   const [page, setPage] = React.useState(1);
   const [pages, setPages] = React.useState(1);
   const [total, setTotal] = React.useState(0);
   const [data, setData] = React.useState([]);
-  const [desc, setDesc] = React.useState("");
-  const [nameCol, setNameCol] = React.useState();
-  const [isSeparator, setSeparator] = React.useState(false);
   const handleChangeFilter = (fil) => {};
+  const [listColom, setListColom] = React.useState();
+  const [bedaData, setBedaData] = React.useState(databaseKel);
+  const [res] = useQuery({
+    query: bedaData,
+  });
+
+  React.useEffect(() => {
+    if (!res.data) {
+      console.log(res.error);
+    } else {
+      setData(res.data.disbun_tani);
+    }
+  }, [res]);
+
+  React.useEffect(() => {
+    const ind = listKolom.filter((prev) => prev.name === jenis);
+    if (ind.length !== 0) {
+      setListColom(ind[0]);
+      setBedaData(ind[0].data);
+    }
+  }, [jenis]);
   return (
     <div className='text-gray-700 mx-20 rounded shadow'>
       <div className='table-fixed mb-16 m-6'>
@@ -33,111 +139,24 @@ export default function Table() {
             <table className='table-auto w-full mb-6 mt-5'>
               <thead className='text-sm text-left'>
                 <tr>
-                  <td className='py-2'>
-                    <button
-                      className='ml-5 flex'
-                      onClick={() => {
-                        handleChangeFilter("tahun");
-                      }}
-                    >
-                      Nama Kelompok Tani
-                      <img
-                        src={icFilter}
-                        alt='filter'
-                        className='px-2 m-auto'
-                      />
-                    </button>
-                  </td>
-                  <td className='py-2'>
-                    <button
-                      className='ml-5 flex'
-                      onClick={() => {
-                        handleChangeFilter("id_kabupaten");
-                      }}
-                    >
-                      Kode Kelompok
-                      <img
-                        src={icFilter}
-                        alt='filter'
-                        className='px-2 m-auto'
-                      />
-                    </button>
-                  </td>
-                  <td className='py-2'>
-                    <button
-                      className='ml-5 flex'
-                      onClick={() => {
-                        handleChangeFilter("id_kecamatan");
-                      }}
-                    >
-                      Komoditas Utama
-                      <img
-                        src={icFilter}
-                        alt='filter'
-                        className='px-2 m-auto'
-                      />
-                    </button>
-                  </td>
-                  <td className='py-2'>
-                    <button
-                      className='ml-5 flex'
-                      onClick={() => {
-                        handleChangeFilter("desa.id_desa");
-                      }}
-                    >
-                      Kabupaten/Kota
-                      <img
-                        src={icFilter}
-                        alt='filter'
-                        className='px-2 m-auto'
-                      />
-                    </button>
-                  </td>
-                  <td className='py-2'>
-                    <button
-                      className='ml-5 flex'
-                      onClick={() => {
-                        handleChangeFilter("iks");
-                      }}
-                    >
-                      Kecamatan
-                      <img
-                        src={icFilter}
-                        alt='filter'
-                        className='px-2 m-auto'
-                      />
-                    </button>{" "}
-                  </td>
-                  <td className=' py-2'>
-                    <button
-                      className='ml-5 flex'
-                      onClick={() => {
-                        handleChangeFilter("ike");
-                      }}
-                    >
-                      Kelurahan/Desa
-                      <img
-                        src={icFilter}
-                        alt='filter'
-                        className='px-2 m-auto'
-                      />
-                    </button>
-                  </td>
-                  <td className='py-2'>
-                    <button
-                      className='ml-5 flex'
-                      onClick={() => {
-                        handleChangeFilter("ikl");
-                      }}
-                    >
-                      Posisi Geografis
-                      <img
-                        src={icFilter}
-                        alt='filter'
-                        className='px-2 m-auto'
-                      />
-                    </button>
-                  </td>
+                  {listColom &&
+                    listColom.head.map((data) => (
+                      <td className='py-2'>
+                        <button
+                          className='ml-5 flex'
+                          onClick={() => {
+                            handleChangeFilter("tahun");
+                          }}
+                        >
+                          {data}
+                          <img
+                            src={icFilter}
+                            alt='filter'
+                            className='px-2 m-auto'
+                          />
+                        </button>
+                      </td>
+                    ))}
                 </tr>
               </thead>
               <tbody>
@@ -149,22 +168,12 @@ export default function Table() {
                       }`}
                       key={data.nama_kec + idx}
                     >
-                      {/* <td className='p-3'>{data.tahun}</td>
-                        <td className='p-3'>{data.nama_kab}</td>
-                        <td className=' p-3'>{data.nama_kec}</td>
-                        <td className=' p-3'>{data.nama_des}</td>
-                        <td className=' p-3'>{data.iks.toFixed(4)} </td>
-                        <td className=' p-3'>{data.ike.toFixed(4)} </td>
-                        <td className=' p-3'>{data.ikl.toFixed(4)} </td>
-                        <td className=' p-3'>{data.avg_idm} </td>
-                        <td className=' p-3'>{data.status_idm} </td>
-                        {isSeparator ? (
-                          <td className=' p-3'>
-                            Rp. {parseInt(data.datanya).toLocaleString()}
+                      {listColom &&
+                        listColom.column.map((col) => (
+                          <td key={col} className=' p-3'>
+                            {data[col]}
                           </td>
-                        ) : (
-                          <td className=' p-3'>{data.datanya} </td>
-                        )} */}
+                        ))}
                     </tr>
                   ))}
               </tbody>
@@ -204,7 +213,7 @@ export default function Table() {
             <div className='flex'>
               <button
                 onClick={() => setPages((prev) => prev - 1)}
-                className={`border  rounded-full px-3 py-2 mr-2 ${
+                className={`border rounded-full px-3 py-2 mr-2 ${
                   pages === 1 ? "border-gray-300" : "border-green-600"
                 }`}
                 disabled={pages === 1}

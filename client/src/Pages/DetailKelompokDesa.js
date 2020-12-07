@@ -9,6 +9,13 @@ import noteIc from "../Assets/note.svg";
 import grupGreen from "../Assets/grupGreen.svg";
 import leafGreen from "../Assets/leafGreen.svg";
 import noteGreen from "../Assets/noteGreen.svg";
+import DatabaseKelompokDetail from "../Components/Detail/DatabaseKelompokDetail";
+import KelembagaanKelompokDetail from "../Components/Detail/KelembagaanKelompokDetail";
+import PengembanganDanPerlindunganDetail from "../Components/Detail/PengembanganDanPerlindunganDetail";
+import DataProduksiDetail from "../Components/Detail/DataProduksiDetail";
+import PengolahanDanPemasaranDetail from "../Components/Detail/PengolahanDanPemasaranDetail";
+import ProduksiDanSertifikasiDetail from "../Components/Detail/ProduksiDanSertifikasiDetail";
+import PerlindunganDanPerkebunanDetail from "../Components/Detail/PerlindunganDanPerkebunanDetail";
 
 export default function DetailKelompokDesa() {
   const [jenis, setJenis] = React.useState("Data Base Kelompok");
@@ -18,7 +25,7 @@ export default function DetailKelompokDesa() {
       <div className='mx-20 my-5'>
         <div className='flex mt-24'>
           <button className='mr-4 p-3'>
-            <img src={back} />
+            <img src={back} alt='bakc' />
           </button>
           <p className='text-lg my-auto'>Detail Kelompok Desa</p>
         </div>
@@ -49,8 +56,8 @@ export default function DetailKelompokDesa() {
             </div>
           </div>
         </div>
-        <div className='rounded shadow flex'>
-          <div className='1/3'>
+        <div className='rounded-lg shadow flex border'>
+          <div className='w-1/3 rounded-l'>
             <div className='rounded bg-white text-left'>
               <button
                 className='flex p-3 w-full hover:bg-gray-200'
@@ -207,24 +214,24 @@ export default function DetailKelompokDesa() {
               </button>
             </div>
           </div>
-          <div className='2/3 border'>
-            {/* <React.Fragment>
+          <div className='w-2/3 border-l rounded-r'>
+            <React.Fragment>
               {jenis === "Data Base Kelompok" ? (
-                <FilterDatabaseKelompok />
+                <DatabaseKelompokDetail />
               ) : jenis === "Kelembagaan Kelompok" ? (
-                <FilterDataKelembagaan />
+                <KelembagaanKelompokDetail />
               ) : jenis === "Pengembangan dan Perlindungan" ? (
-                <FilterDataPerlindungan />
+                <PengembanganDanPerlindunganDetail />
               ) : jenis === "Data Produksi" ? (
-                <FilterDataProduksi />
+                <DataProduksiDetail />
               ) : jenis === "Pengolahan dan Pemasaran" ? (
-                <FilterDataPengolahan />
+                <PengolahanDanPemasaranDetail />
               ) : jenis === "Produksi dan Sertifikasi Benih" ? (
-                <FilterDataSertifikasi />
+                <ProduksiDanSertifikasiDetail />
               ) : jenis === "Perlindungan Perkebunan" ? (
-                <FilterDataPerkebunan />
+                <PerlindunganDanPerkebunanDetail />
               ) : null}
-            </React.Fragment> */}
+            </React.Fragment>
           </div>
         </div>
       </div>

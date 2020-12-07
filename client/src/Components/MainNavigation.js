@@ -10,12 +10,11 @@ import tableIc from "../Assets/icTable.svg";
 import tableIcAct from "../Assets/tableAct.svg";
 import dpDownGray from "../Assets/dpDownGray.svg";
 import dpDownGreen from "../Assets/dpDownGreen.svg";
-
 import Login from "../Pages/Login";
 
 export default function MainNavigation() {
   const history = useHistory();
-  const { setAuth, dispatch } = React.useContext(AppContext);
+  const { dispatch } = React.useContext(AppContext);
   const [popup, setPopup] = React.useState(false);
   const [pilihMap, setMap] = React.useState(false);
   const [path, setpath] = React.useState(window.location.pathname);

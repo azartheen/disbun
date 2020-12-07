@@ -1,0 +1,61 @@
+
+[
+    {
+      "name": "Data Base Kelompok",
+      "head": [
+        "Nama Kelompok Tani",
+        "Kode Kelompok",
+        "Komoditas Utama",
+        "Kabupaten/Kota",
+        "Kecamatan",
+        "Kelurahan/Desa",
+        "Posisi Geografis"
+      ],
+      "column": [
+        "nama_kelompok_tani",
+        "kode_kelompok",
+        "komoditas_utama",
+        "kab_kot",
+        "kec",
+        "kel",
+        "latitude",
+        "longitude"
+      ]
+    },
+    {
+      "name": "Kelembagaan Kelompok",
+      "head": [
+        "Nama Kelompok Tani",
+        "Kode Kelompok",
+        "Komoditas Utama",
+        "Kabupaten/Kota",
+        "Kecamatan",
+        "Kelurahan/Desa",
+        "Anggota",
+        "Tahun Berdiri",
+        "Kelas",
+        "Legalitas",
+        "Prestasi",
+        "Koprasi"
+      ],
+      "column": [
+        "nama_kelompok_tani",
+        "kode_kelompok",
+        "komoditas_utama",
+        "kab_kot",
+        "kec",
+        "kel",
+        "jumlah_total_anggota",
+        "tahun_berdiri",
+        "kelas_kelompok",
+        "sk_pembentukan",
+        "akta_notaris",
+        "ahu",
+        "prestasi_kabupaten",
+        "prestasi_provinsi",
+        "prestasi_nasional",
+        "prestasi_internasional",
+        "nama_koperasi"
+      ]
+    }
+  ]

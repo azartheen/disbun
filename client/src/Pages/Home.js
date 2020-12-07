@@ -1,6 +1,6 @@
 import React from "react";
 import bgBig from "../Assets/bgDashboardBig.png";
-import bgSmall from "../Assets/bgDashboardLong.png";
+// import bgSmall from "../Assets/bgDashboardLong.png";
 import icKomoditas from "../Assets/icKomoditas.svg";
 import icLuasKebun from "../Assets/icLuasKebun.svg";
 import icPPUP from "../Assets/icPPUP.svg";

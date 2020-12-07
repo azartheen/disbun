@@ -5,7 +5,7 @@ import icLogoDisbunWhite from "../Assets/icLogoDisbunWhite.svg";
 export default function Login({ setPopup }) {
   const [username, setUsername] = React.useState("");
   const [password, setPassword] = React.useState("");
-  const [loading, setLoading] = React.useState(false);
+  // const [loading, setLoading] = React.useState(false);
   const login = React.useCallback(async () => {}, []);
 
   const EnterPress = (event) => {
@@ -91,7 +91,7 @@ export default function Login({ setPopup }) {
                   setPassword(e.target.value);
                 }}
                 onKeyPress={EnterPress}
-              ></input>{" "}
+              ></input>
             </div>
             <button
               onClick={() => {

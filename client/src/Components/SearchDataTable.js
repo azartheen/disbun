@@ -9,7 +9,79 @@ import FilterDataPengolahan from "./FilterDataPengolahan";
 import FilterDataProduksi from "./FilterDataProduksi";
 import FilterDataSertifikasi from "./FilterDataSertifikasi";
 import FilterDataPerkebunan from "./FilterDataPerkebunan";
+import { useQuery } from "urql";
+
+const kabDisbun = `
+query MyQuery {
+  disbun_tani(distinct_on: kab_kot) {
+    kab_kot
+  }
+}`;
+
+const kecDisbun = `query MyQuery($kab:String) {
+  disbun_tani(distinct_on: kec, where: {kab_kot: {_eq: $kab}}) {
+    kec
+  }
+}
+`;
+
+const kelDisbun = `query MyQuery($kec:String) {
+  disbun_tani(distinct_on: kel, where: {kec: {_eq: $kec}}) {
+    kel
+  }
+}
+`;
+
 export default function SearchDataTable({ jenis, show, setShow }) {
+  const [kec, setKec] = React.useState("");
+  const [kab, setKab] = React.useState("");
+  const [kel, setKel] = React.useState("");
+
+  const [listKab, setListKab] = React.useState([]);
+  const [listKec, setListKec] = React.useState([]);
+  const [listkel, setListKel] = React.useState([]);
+
+  // const [res, reexecuteQuery] = useQuery({
+  //   query: kabDisbun,
+  //   // variables: { limit: limit, page: pages, filter: filter, order: orderan },
+  // });
+  const [res] = useQuery({
+    query: kabDisbun,
+  });
+
+  const [resKec] = useQuery({
+    query: kecDisbun,
+    variables: { kab: kab },
+  });
+
+  const [resKel] = useQuery({
+    query: kelDisbun,
+    variables: { kec: kec },
+  });
+
+  React.useEffect(() => {
+    if (!resKel.data) {
+      console.log(resKel.error);
+    } else {
+      setListKel(resKel.data.disbun_tani);
+    }
+  }, [resKel]);
+
+  React.useEffect(() => {
+    if (!resKec.data) {
+      console.log(resKec.error);
+    } else {
+      setListKec(resKec.data.disbun_tani);
+    }
+  }, [resKec]);
+
+  React.useEffect(() => {
+    if (!res.data) {
+      console.log(res.error);
+    } else {
+      setListKab(res.data.disbun_tani);
+    }
+  }, [res]);
   return (
     <div className='mx-20 my-10 rounded shadow p-5'>
       <p>Pencarian</p>
@@ -39,12 +111,17 @@ export default function SearchDataTable({ jenis, show, setShow }) {
             <select
               class='block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded focus:outline-none focus:shadow-outline'
               onChange={(e) => {
-                // setKel(e.target.value);
+                setKab(e.target.value);
               }}
+              value={kab}
             >
-              <option value={"kelurahan"}>Semua Kelurahan </option>
-              <option value={"mangunarga"}>mangunarga</option>
-              <option value={"Cangkuang wetan"}>Cangkuang wetan</option>
+              <option value={""}>Semua Kabupaten </option>
+              {listKab &&
+                listKab.map((data, idx) => (
+                  <React.Fragment key={data + idx}>
+                    <option value={data.kab_kot}>{data.kab_kot}</option>
+                  </React.Fragment>
+                ))}
             </select>
             <div class='pointer-events-none absolute inset-y-0 right-0 flex items-center px-2'>
               <img src={dpDown} alt='dp' className='m-auto' />
@@ -57,12 +134,17 @@ export default function SearchDataTable({ jenis, show, setShow }) {
             <select
               class='block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded focus:outline-none focus:shadow-outline'
               onChange={(e) => {
-                // setKel(e.target.value);
+                setKec(e.target.value);
               }}
+              value={kec}
             >
-              <option value={"kelurahan"}>Semua Kelurahan </option>
-              <option value={"mangunarga"}>mangunarga</option>
-              <option value={"Cangkuang wetan"}>Cangkuang wetan</option>
+              <option value={""}>Semua Kecamatan </option>
+              {listKec &&
+                listKec.map((data, idx) => (
+                  <React.Fragment key={data + idx}>
+                    <option value={data.kec}>{data.kec}</option>
+                  </React.Fragment>
+                ))}
             </select>
             <div class='pointer-events-none absolute inset-y-0 right-0 flex items-center px-2'>
               <img src={dpDown} alt='dp' className='m-auto' />
@@ -75,12 +157,17 @@ export default function SearchDataTable({ jenis, show, setShow }) {
             <select
               class='block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded focus:outline-none focus:shadow-outline'
               onChange={(e) => {
-                // setKel(e.target.value);
+                setKel(e.target.value);
               }}
+              value={kel}
             >
-              <option value={"kelurahan"}>Semua Kelurahan </option>
-              <option value={"mangunarga"}>mangunarga</option>
-              <option value={"Cangkuang wetan"}>Cangkuang wetan</option>
+              <option value={""}>Semua Kelurahan </option>
+              {listkel &&
+                listkel.map((data, idx) => (
+                  <React.Fragment key={data + idx}>
+                    <option value={data.kel}>{data.kel}</option>
+                  </React.Fragment>
+                ))}
             </select>
             <div class='pointer-events-none absolute inset-y-0 right-0 flex items-center px-2'>
               <img src={dpDown} alt='dp' className='m-auto' />

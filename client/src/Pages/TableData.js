@@ -14,6 +14,7 @@ export default function TableData() {
   const [jenis, setJenis] = React.useState("Data Base Kelompok");
   const [showListTable, setListTable] = React.useState(false);
   const [moreFilter, setMoreFilter] = React.useState(false);
+
   return (
     <div>
       <div className='flex justify-between mt-32 mx-20 text-sm'>
@@ -206,7 +207,7 @@ export default function TableData() {
         show={moreFilter}
         setShow={setMoreFilter}
       />
-      <Table />
+      <Table jenis={jenis} />
     </div>
   );
 }
