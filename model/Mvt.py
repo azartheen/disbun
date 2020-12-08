@@ -1,5 +1,5 @@
 from enum import Enum
-from fastapi import Path, Response
+from fastapi import Path, Response, HTTPException
 from db import db
 
 
@@ -12,15 +12,18 @@ class Mvt:
     async def get_mvt(
         mvt_type: MvtType,
         layer_name: str,
+        id_desa: str = None,
         z: int = Path(..., ge=10),
         x: int = Path(..., ge=10),
         y: int = Path(..., ge=10),
     ):
-        filter_query = "tanaman = 'akar_wangi' AND " if mvt_type == "tanaman" else ""
+        if mvt_type == "tanaman" and not id_desa:
+            raise HTTPException(
+                status_code=422, detail=f"Get data failed: Input id_desa"
+            )
+        filter_query = f"id_desa = {id_desa} AND " if mvt_type == "tanaman" else ""
         table_name = "disbun_tanaman" if mvt_type == "tanaman" else "disbun_tani"
-        columns = (
-            "ogc_fid, id_desa, tanaman, hasil, " if mvt_type == "tanaman" else "id, "
-        )
+        columns = "id, id_desa, tanaman, hasil, " if mvt_type == "tanaman" else "id, "
 
         pool = db.get_pool()
         mvt = await pool.fetchval(
@@ -53,6 +56,3 @@ class Mvt:
             y,
         )
         return mvt
-        # if mvt == bytes():
-        #     return Response(status_code=204)
-        # return Response(content=mvt, media_type="application/x-protobuf")
