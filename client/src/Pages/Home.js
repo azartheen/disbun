@@ -1,6 +1,5 @@
 import React from "react";
 import bgBig from "../Assets/bgDashboardBig.png";
-// import bgSmall from "../Assets/bgDashboardLong.png";
 import icKomoditas from "../Assets/icKomoditas.svg";
 import icLuasKebun from "../Assets/icLuasKebun.svg";
 import icPPUP from "../Assets/icPPUP.svg";
@@ -8,8 +7,120 @@ import icDesa from "../Assets/icDesa.svg";
 import icKelTani from "../Assets/icKelompokTani.svg";
 import PesebaranData from "../Components/PesebaranData";
 import Footer from "../Components/Footer";
+import { useQuery } from "urql";
 
+const dataHome = `query MyQuery {
+  komoditas: disbun_tani_aggregate {
+    aggregate {
+      count(distinct: true, columns: komoditas_utama)
+    }
+  }
+  desa : disbun_tani_aggregate {
+      aggregate {
+        count(distinct: true, columns: kel)
+      }
+    }
+  keltan: disbun_tani_aggregate {
+      aggregate {
+        count(columns: nama_kelompok_tani)
+      }
+    }
+  luas: disbun_tani_aggregate {
+      aggregate {
+        count(columns: luas_lahan)
+      }
+    }
+}`;
+
+const chart = `query MyQuery {
+  kabbandung: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB BANDUNG"}}) {
+    aggregate {
+      count
+    }
+  }
+  kabbogor: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB BOGOR"}}) {
+    aggregate {
+      count
+    }
+  }
+  kabbandungbarat: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB BANDUNG BARAT"}}) {
+    aggregate {
+      count
+    }
+  }
+  kabbekasi: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB BEKASI"}}) {
+    aggregate {
+      count
+    }
+  }
+  kabciamis: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB CIAMIS"}}) {
+    aggregate {
+      count
+    }
+  }
+  kabcianjur: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB CIANJUR"}}) {
+    aggregate {
+      count
+    }
+  }
+  kabcirebon: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB CIREBON"}}) {
+    aggregate {
+      count
+    }
+  }
+  kabgarut: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB GARUT"}}) {
+    aggregate {
+      count
+    }
+  }
+  kabindramayu: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB INDRAMAYU"}}) {
+    aggregate {
+      count
+    }
+  }
+  kabindramayu: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB INDRAMAYU"}}) {
+    aggregate {
+      count
+    }
+  }
+}`;
+
+// KAB KARAWANG
+// KAB KUNINGAN
+// KAB MAJALENGKA
+// KAB PANGANDARAN
+// KAB PURWAKARTA
+// KAB SUBANG
+// KAB SUKABUMI
+// KAB SUMEDANG
+// KAB TASIKMALAYA
+// KOTA BANJAR
+// KOTA BOGOR
+// KOTA TASIKMALAYA
 export default function Home() {
+  const [komoditas, setKomoditas] = React.useState("");
+  const [luasKebun, setLuasKebun] = React.useState("");
+  const [desa, setDesa] = React.useState("");
+  const [kelTani, setKelTani] = React.useState("");
+
+  const [res] = useQuery({
+    query: dataHome,
+  });
+
+  React.useEffect(() => {
+    if (!res.data) {
+      console.log(res.error);
+    } else {
+      console.log(res.data);
+      const dat = res.data;
+      debugger;
+      setDesa(dat.desa.aggregate.count);
+      setKomoditas(dat.komoditas.aggregate.count);
+      setLuasKebun(dat.luas.aggregate.count);
+      setKelTani(dat.keltan.aggregate.count);
+    }
+  }, [res]);
+
   return (
     <div>
       <div className='mx-20 mt-32'>
@@ -54,7 +165,7 @@ export default function Home() {
                   <img src={icKomoditas} alt='komoditas' />
                 </div>
                 <div className='ml-4'>
-                  <p className='font-medium'>230</p>
+                  <p className='font-medium'>{komoditas}</p>
                   <p>Komoditas</p>
                 </div>
               </div>
@@ -63,7 +174,7 @@ export default function Home() {
                   <img src={icLuasKebun} alt='kebun' className='w-full' />
                 </div>
                 <div className='ml-4'>
-                  <p className='font-medium'>230</p>
+                  <p className='font-medium'>{luasKebun}</p>
                   <p>Luas Perkebunan</p>
                 </div>
               </div>
@@ -72,7 +183,7 @@ export default function Home() {
                   <img src={icDesa} alt='desa' />
                 </div>
                 <div className='ml-4'>
-                  <p className='font-medium'>230</p>
+                  <p className='font-medium'>{desa}</p>
                   <p>Desa</p>
                 </div>
               </div>
@@ -81,7 +192,7 @@ export default function Home() {
                   <img src={icPPUP} alt='pup' />
                 </div>
                 <div className='ml-4'>
-                  <p className='font-medium'>230</p>
+                  <p className='font-medium'>672</p>
                   <p>PPUP</p>
                 </div>
               </div>
@@ -90,7 +201,7 @@ export default function Home() {
                   <img src={icKelTani} alt='tani' />
                 </div>
                 <div className='ml-4'>
-                  <p className='font-medium'>230</p>
+                  <p className='font-medium'>{kelTani}</p>
                   <p>Kelompok Tani</p>
                 </div>
               </div>

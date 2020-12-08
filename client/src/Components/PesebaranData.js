@@ -104,8 +104,8 @@ export default function PesebaranData() {
           <p className='my-4'>Jumlah Kelompok Tani Per-Kabupaten/Kota </p>
           <BarChart />
           <div className='w-full h-1 bg-gray-200 my-16'></div>
-          <p className='my-6'>Pembangunan Kelompok Tani</p>
-          <DougnutChart />
+          {/* <p className='my-6'>Pembangunan Kelompok Tani</p>
+          <DougnutChart /> */}
         </div>
       </div>
     </div>
