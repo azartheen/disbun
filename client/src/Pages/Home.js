@@ -32,71 +32,6 @@ const dataHome = `query MyQuery {
     }
 }`;
 
-const chart = `query MyQuery {
-  kabbandung: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB BANDUNG"}}) {
-    aggregate {
-      count
-    }
-  }
-  kabbogor: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB BOGOR"}}) {
-    aggregate {
-      count
-    }
-  }
-  kabbandungbarat: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB BANDUNG BARAT"}}) {
-    aggregate {
-      count
-    }
-  }
-  kabbekasi: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB BEKASI"}}) {
-    aggregate {
-      count
-    }
-  }
-  kabciamis: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB CIAMIS"}}) {
-    aggregate {
-      count
-    }
-  }
-  kabcianjur: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB CIANJUR"}}) {
-    aggregate {
-      count
-    }
-  }
-  kabcirebon: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB CIREBON"}}) {
-    aggregate {
-      count
-    }
-  }
-  kabgarut: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB GARUT"}}) {
-    aggregate {
-      count
-    }
-  }
-  kabindramayu: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB INDRAMAYU"}}) {
-    aggregate {
-      count
-    }
-  }
-  kabindramayu: disbun_tani_aggregate(where: {kab_kot: {_eq: "KAB INDRAMAYU"}}) {
-    aggregate {
-      count
-    }
-  }
-}`;
-
-// KAB KARAWANG
-// KAB KUNINGAN
-// KAB MAJALENGKA
-// KAB PANGANDARAN
-// KAB PURWAKARTA
-// KAB SUBANG
-// KAB SUKABUMI
-// KAB SUMEDANG
-// KAB TASIKMALAYA
-// KOTA BANJAR
-// KOTA BOGOR
-// KOTA TASIKMALAYA
 export default function Home() {
   const [komoditas, setKomoditas] = React.useState("");
   const [luasKebun, setLuasKebun] = React.useState("");
@@ -113,7 +48,6 @@ export default function Home() {
     } else {
       console.log(res.data);
       const dat = res.data;
-      debugger;
       setDesa(dat.desa.aggregate.count);
       setKomoditas(dat.komoditas.aggregate.count);
       setLuasKebun(dat.luas.aggregate.count);
@@ -131,19 +65,9 @@ export default function Home() {
               backgroundImage: `url(${bgBig})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
-              // backgroundPosition: "center",
             }}
           >
-            {/* <img src={bgBig} alt='bg' /> */}
-
-            <div
-              className='absolute text-white bottom-0 m-8'
-              // style={{
-              //   top: "75%",
-              //   left: "37%",
-              //   transform: "translate(-50%, -50%)",
-              // }}
-            >
+            <div className='absolute text-white bottom-0 m-8'>
               <p className='font-medium text-3xl'>
                 Layanan Integrasi Fitur <br /> Sistem Informasi Perkebunan
               </p>

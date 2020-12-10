@@ -6,6 +6,14 @@ import tree from "../Assets/tree.svg";
 import kopi from "../Assets/coffee.svg";
 import checked from "../Assets/checked.svg";
 import unChecked from "../Assets/unChecked.svg";
+import { useQuery } from "urql";
+import AppContext from "../Context/AppContext";
+
+const listTanaman = `query MyQuery($kab:String, $kec:String, $kel:String) {
+  disbun_tanaman(distinct_on: tanaman, where: {kecamatan_: {_eq: $kec}, kab_: {_eq: $kab}, desa_1: {_eq: $kel}}) {
+    tanaman
+  }
+}`;
 
 const data = [
   {
@@ -46,7 +54,24 @@ const data = [
   },
 ];
 export default function FilterPetaLahan({ isCari }) {
+  const { kec, kel, kab } = React.useContext(AppContext);
   const [showKomoditas, setShowKomoditas] = React.useState(false);
+  const [listKomo, setListKomo] = React.useState([]);
+
+  const [res] = useQuery({
+    query: listTanaman,
+    variables: { kec: kec, kab: kab, kel: kel },
+  });
+
+  React.useEffect(() => {
+    if (!res.data) {
+      console.log(res.error);
+    } else {
+      console.log(res.data.disbun_tanaman);
+      setListKomo(res.data.disbun_tanaman);
+    }
+  }, [res]);
+
   return (
     <React.Fragment>
       {isCari ? (
@@ -85,11 +110,11 @@ export default function FilterPetaLahan({ isCari }) {
           </div>
           {showKomoditas ? (
             <div className='overflow-auto' style={{ height: "250px" }}>
-              {data.map((list, idx) => (
+              {listKomo.map((list, idx) => (
                 <div className='flex justify-between p-2 py-4'>
                   <div className='flex'>
-                    <img src={list.img} alt={list.name} className='mr-2' />
-                    <p className='text-left'>{list.name}</p>
+                    {/* <img src={list.img} alt={list.name} className='mr-2' /> */}
+                    <p className='text-left'>{list.tanaman}</p>
                   </div>
                   <button onClick={() => {}}>
                     <img src={unChecked} alt='semua' />
@@ -98,7 +123,7 @@ export default function FilterPetaLahan({ isCari }) {
               ))}
             </div>
           ) : null}
-          <div
+          {/* <div
             className='flex mt-10'
             onClick={() => {
               setShowKomoditas(!showKomoditas);
@@ -112,7 +137,7 @@ export default function FilterPetaLahan({ isCari }) {
               <p className='text-xs'>Berdasarkan Komoditi</p>
             </div>
             <img src={dpDown} alt='dp' className='m-auto ml-2' />
-          </div>
+          </div> */}
         </div>
       ) : null}
     </React.Fragment>

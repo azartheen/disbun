@@ -7,6 +7,7 @@ import lahan from "../Assets/legendaLahan.svg";
 import tani from "../Assets/legendaTani.svg";
 import FilterPetaLahan from "../Components/FilterPetaLahan";
 import AppContext from "../Context/AppContext";
+import MvtLayer from "../Components/Mvt/MvtLayer";
 
 export default function Map() {
   const mapElementRef = React.useRef(null);
@@ -23,7 +24,7 @@ export default function Map() {
       container: mapElementRef.current,
       style: "mapbox://styles/mapbox/streets-v11",
       center: [107.606, -6.9292],
-      zoom: 10,
+      zoom: 12,
     });
 
     // mapRef.current.addControl(
@@ -70,7 +71,8 @@ export default function Map() {
 
       <MapProvider value={{ map: mapRef.current }}>
         {mapload && (
-          <React.Fragment className='relative'>
+          <React.Fragment>
+            <MvtLayer />
             {jenisMap ? (
               <FilterKelompokTani isCari={showFilter} />
             ) : (

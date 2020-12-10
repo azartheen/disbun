@@ -7,11 +7,11 @@ export default function BarChart({ dataBar }) {
     new Chart(chartRef.current, {
       type: "horizontalBar",
       data: {
-        labels: ["bandung", "banjar", "tasik", "Subang", "majalengka", "Garut"],
+        labels: dataBar.label,
         datasets: [
           {
             label: "jumlah",
-            data: [12, 19, 3, 12, 19, 3],
+            data: dataBar.data,
             // data: dataBar,
             backgroundColor: "#009D57",
             borderColor: "#009D57",

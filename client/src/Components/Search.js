@@ -3,12 +3,129 @@ import peta from "../Assets/icPetaBig.svg";
 import search from "../Assets/icSearch.svg";
 import dpDown from "../Assets/dpDown.svg";
 import AppContext from "../Context/AppContext";
+import { useQuery } from "urql";
+import dataKabKec from "../Assets/kab_kec_des_disbun.json";
+
+// const kabDisbun = `
+// query MyQuery {
+//   disbun_tani(distinct_on: kab_kot) {
+//     kab_kot
+//   }
+// }`;
+
+// const kecDisbun = `query MyQuery($kab:String) {
+//   disbun_tani(distinct_on: kec, where: {kab_kot: {_eq: $kab}}) {
+//     kec
+//   }
+// }
+// `;
+
+// const kelDisbun = `query MyQuery($kec:String) {
+//   disbun_tani(distinct_on: kel, where: {kec: {_eq: $kec}}) {
+//     kel
+//   }
+// }
+// `;
+
+const getLoc = `query MyQuery($kab: String, $kec: String, $kel: String) {
+  disbun_tanaman(where: {kecamatan_: {_eq: $kec}, kab_: {_eq: $kab}, desa_1: {_eq: $kel}}, limit: 1) {
+    x
+    y
+    id_desa
+  }
+}
+`;
 
 export default function Search({ isCari, setIsCari }) {
-  const [kab, setKab] = React.useState("kabupaten");
-  const { jenisMap } = React.useContext(AppContext);
-  const [kec, setKec] = React.useState("dayeuhkolot");
-  const [kel, setKel] = React.useState("Cangkuang Wetan");
+  const { jenisMap, dispatch, kec, kab, kel } = React.useContext(AppContext);
+  const [listKab, setListKab] = React.useState([]);
+  const [listKec, setListKec] = React.useState([]);
+  const [listkel, setListKel] = React.useState([]);
+  const [lok, setLok] = React.useState();
+  // const [newQueryKab, setnewQueryKab] = React.useState(kabTanam);
+  // const [newQueryKec, setnewQueryKec] = React.useState(kecTanam);
+  // const [newQueryKel, setnewQueryKel] = React.useState(kelTanam);
+  // const [res] = useQuery({
+  //   query: newQueryKab,
+  // });
+
+  const [loc] = useQuery({
+    query: getLoc,
+    variables: { kab: kab, kec: kec, kel: kel },
+  });
+
+  // const [resKec] = useQuery({
+  //   query: newQueryKec,
+  //   variables: { kab: kab },
+  // });
+
+  // const [resKel] = useQuery({
+  //   query: newQueryKel,
+  //   variables: { kec: kec },
+  // });
+
+  React.useEffect(() => {
+    if (!loc.data) {
+      console.log(loc.error);
+    } else {
+      setLok(loc.data.disbun_tanaman);
+      console.log(loc.data.disbun_tanaman);
+    }
+  }, [loc]);
+
+  // React.useEffect(() => {
+  //   if (!resKel.data) {
+  //     console.log(resKel.error);
+  //   } else {
+  //     if (jenisMap) {
+  //       setListKel(resKel.data.disbun_tani);
+  //     } else {
+  //       setListKel(resKel.data.disbun_tanaman);
+  //     }
+  //   }
+  // }, [resKel]);
+
+  // React.useEffect(() => {
+  //   if (!resKec.data) {
+  //     console.log(resKec.error);
+  //   } else {
+  //     if (jenisMap) {
+  //       setListKec(resKec.data.disbun_tani);
+  //     } else {
+  //       setListKec(resKec.data.disbun_tanaman);
+  //     }
+  //   }
+  // }, [resKec]);
+
+  // React.useEffect(() => {
+  //   if (!res.data) {
+  //     console.log(res.error);
+  //   } else {
+  //     if (jenisMap) {
+  //       setListKab(res.data.disbun_tani);
+  //     } else {
+  //       setListKab(res.data.disbun_tanaman);
+  //     }
+  //   }
+  // }, [res]);
+
+  React.useEffect(() => {
+    setListKab(Object.keys(dataKabKec));
+    console.log(Object.keys(dataKabKec));
+  }, [dataKabKec]);
+
+  React.useEffect(() => {
+    if (kab !== "") {
+      setListKec(Object.keys(dataKabKec[kab]));
+      console.log(Object.keys(dataKabKec[kab]));
+    }
+  }, [kab]);
+
+  React.useEffect(() => {
+    if (kec !== "") {
+      setListKel(dataKabKec[kab][kec]);
+    }
+  }, [kec]);
 
   return (
     <React.Fragment>
@@ -31,20 +148,30 @@ export default function Search({ isCari, setIsCari }) {
         </div>
         <div className='my-auto mx-2 '>
           {isCari ? (
-            <div className='flex lg:w-64'>{kab}</div>
+            <div className='flex lg:w-64'>
+              {kab === "" ? "Semua Kabupaten" : kab}
+            </div>
           ) : (
-            <div class='inline-block relative xl:w-64 text-sm'>
+            <div className='inline-block relative xl:w-64 text-sm'>
               <select
-                class='block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded focus:outline-none focus:shadow-outline'
+                className='block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded focus:outline-none focus:shadow-outline'
                 onChange={(e) => {
-                  setKab(e.target.value);
+                  dispatch({
+                    type: "setKab",
+                    payload: e.target.value,
+                  });
                 }}
+                value={kab}
               >
-                <option value={"kabupaten"}>Kabupaten </option>
-                <option value={"Bandung"}>Bandung</option>
-                <option value={"Sumendang"}>Sumedang</option>
+                <option value={""}>Semua Kabupaten</option>
+                {listKab &&
+                  listKab.map((data, idx) => (
+                    <React.Fragment key={data + idx}>
+                      <option value={data}>{data}</option>
+                    </React.Fragment>
+                  ))}
               </select>
-              <div class='pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-green-600'>
+              <div className='pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-green-600'>
                 <img src={dpDown} alt='dp' />
               </div>
             </div>
@@ -54,21 +181,29 @@ export default function Search({ isCari, setIsCari }) {
           {isCari ? (
             <div className='flex lg:w-64'>
               <div className='w-1 h-10 bg-gray-300 rounded mx-6'></div>
-              {kec}
+              {kec === "" ? "Semua Kecamatan" : kec}
             </div>
           ) : (
-            <div class='inline-block relative xl:w-64 text-sm '>
+            <div className='inline-block relative xl:w-64 text-sm '>
               <select
-                class='block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded focus:outline-none focus:shadow-outline'
+                className='block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded focus:outline-none focus:shadow-outline'
                 onChange={(e) => {
-                  setKec(e.target.value);
+                  dispatch({
+                    type: "setKec",
+                    payload: e.target.value,
+                  });
                 }}
+                value={kec}
               >
-                <option value={"kecamatan"}>Semua Kecamatan </option>
-                <option value={"Cihampelas"}>Cihampelas</option>
-                <option value={"dayeuhkolot"}>Dayeuhkolot</option>
+                <option value={""}>Semua Kecamatan </option>
+                {listKec &&
+                  listKec.map((data, idx) => (
+                    <React.Fragment key={data + idx}>
+                      <option value={data}>{data}</option>
+                    </React.Fragment>
+                  ))}
               </select>
-              <div class='pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-green-600'>
+              <div className='pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-green-600'>
                 <img src={dpDown} alt='dp' />
               </div>
             </div>
@@ -79,21 +214,29 @@ export default function Search({ isCari, setIsCari }) {
           {isCari ? (
             <div className='flex lg:w-64'>
               <div className='w-1 h-10 bg-gray-300 rounded mx-6'></div>
-              {kel}
+              {kel === "" ? "Semua Kecamatan" : kel}
             </div>
           ) : (
-            <div class='inline-block relative xl:w-64 text-sm mr-5'>
+            <div className='inline-block relative xl:w-64 text-sm mr-5'>
               <select
-                class='block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded focus:outline-none focus:shadow-outline'
+                className='block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded focus:outline-none focus:shadow-outline'
                 onChange={(e) => {
-                  setKel(e.target.value);
+                  dispatch({
+                    type: "setKel",
+                    payload: e.target.value,
+                  });
                 }}
+                value={kel}
               >
-                <option value={"kelurahan"}>Semua Kelurahan </option>
-                <option value={"mangunarga"}>mangunarga</option>
-                <option value={"Cangkuang wetan"}>Cangkuang wetan</option>
+                <option value={""}>Semua Kelurahan </option>
+                {listkel &&
+                  listkel.map((data, idx) => (
+                    <React.Fragment key={data + idx}>
+                      <option value={data}>{data}</option>
+                    </React.Fragment>
+                  ))}
               </select>
-              <div class='pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-green-600'>
+              <div className='pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-green-600'>
                 <img src={dpDown} alt='dp' />
               </div>
             </div>

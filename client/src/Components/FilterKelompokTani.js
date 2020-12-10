@@ -6,6 +6,13 @@ import tree from "../Assets/tree.svg";
 import kopi from "../Assets/coffee.svg";
 import checked from "../Assets/checked.svg";
 import unChecked from "../Assets/unChecked.svg";
+import { useQuery } from "urql";
+
+const listKomoditas = `query MyQuery {
+  disbun_tani(distinct_on: komoditas_utama) {
+    komoditas_utama
+  }
+}`;
 
 const data = [
   {
@@ -47,6 +54,19 @@ const data = [
 ];
 export default function FilterKelompokTani({ isCari }) {
   const [showKomoditas, setShowKomoditas] = React.useState(false);
+  const [listKomo, setListKomo] = React.useState([]);
+
+  const [res] = useQuery({
+    query: listKomoditas,
+  });
+
+  React.useEffect(() => {
+    if (!res.data) {
+      console.log(res.error);
+    } else {
+      setListKomo(res.data.disbun_tani);
+    }
+  }, [res]);
   return (
     <React.Fragment>
       {isCari ? (
@@ -157,11 +177,11 @@ export default function FilterKelompokTani({ isCari }) {
           </div>
           {showKomoditas ? (
             <div className='overflow-auto' style={{ height: "250px" }}>
-              {data.map((list, idx) => (
+              {listKomo.map((list, idx) => (
                 <div className='flex justify-between p-2 py-4'>
                   <div className='flex'>
-                    <img src={list.img} alt={list.name} className='mr-2' />
-                    <p className='text-left'>{list.name}</p>
+                    {/* <img src={list.img} alt={list.name} className='mr-2' /> */}
+                    <p className='text-left'>{list.komoditas_utama}</p>
                   </div>
                   <button onClick={() => {}}>
                     <img src={unChecked} alt='semua' />

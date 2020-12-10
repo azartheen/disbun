@@ -36,12 +36,21 @@ const initialState = {
   snack: false,
   snackMessage: "",
   jenisMap: false,
+  kec: "",
+  kel: "",
+  kab: "",
 };
 
 const reducer = (state, action) => {
   switch (action.type) {
     case "setAuth":
       return { ...state, auth: action.payload };
+    case "setKec":
+      return { ...state, kec: action.payload };
+    case "setKab":
+      return { ...state, kab: action.payload };
+    case "setKel":
+      return { ...state, kel: action.payload };
     case "setJenisMap":
       return { ...state, jenisMap: action.payload };
     case "setSnack":
