@@ -14,10 +14,14 @@ import Login from "../Pages/Login";
 
 export default function MainNavigation() {
   const history = useHistory();
-  const { dispatch } = React.useContext(AppContext);
+  const { dispatch, jenisMap } = React.useContext(AppContext);
   const [popup, setPopup] = React.useState(false);
   const [pilihMap, setMap] = React.useState(false);
   const [path, setpath] = React.useState(window.location.pathname);
+
+  React.useEffect(() => {
+    setMap(false);
+  }, [path]);
 
   return (
     <div>
@@ -92,28 +96,52 @@ export default function MainNavigation() {
             </button>
             {pilihMap ? (
               <div className='absolute bg-white rounded shadow-md p-2 border z-50 text-gray-700'>
-                <div>
+                <div
+                  onClick={() => {
+                    setMap(false);
+                  }}
+                >
                   <button
-                    className='p-2 w-full text-left'
+                    className={`p-2 text-left w-full ${
+                      !jenisMap && path === "/map" ? "text-green-600" : null
+                    }`}
                     onClick={() => {
                       history.push("/map");
                       setpath("/map");
-                      dispatch({ type: "setJenisMap", payload: true });
-                      setMap(false);
-                    }}
-                  >
-                    <p>Peta Kelompok Tani</p>
-                  </button>
-                  <button
-                    className='p-2 text-left w-full'
-                    onClick={() => {
-                      history.push("/map");
-                      setpath("/map");
+                      dispatch({ type: "setType", payload: "tanaman" });
+                      dispatch({
+                        type: "resetKabKec",
+                        payload: {
+                          x: 107.606,
+                          y: -6.9292,
+                          id_desa: "",
+                        },
+                      });
                       dispatch({ type: "setJenisMap", payload: false });
-                      setMap(false);
                     }}
                   >
                     <p>Peta Lahan</p>
+                  </button>
+                  <button
+                    className={`p-2 text-left w-full ${
+                      jenisMap && path === "/map" ? "text-green-600" : null
+                    }`}
+                    onClick={() => {
+                      history.push("/map");
+                      setpath("/map");
+                      dispatch({ type: "setType", payload: "tani" });
+                      dispatch({
+                        type: "resetKabKec",
+                        payload: {
+                          longitude: 107.606,
+                          latitude: -6.9292,
+                          id_desa: "",
+                        },
+                      });
+                      dispatch({ type: "setJenisMap", payload: true });
+                    }}
+                  >
+                    <p>Peta Kelompok Tani</p>
                   </button>
                 </div>
               </div>
@@ -156,13 +184,7 @@ export default function MainNavigation() {
         </div>
       </nav>
       {popup ? (
-        <div
-          className='fixed w-screen z-40 top-0'
-          style={{ height: "100vh" }}
-          // onClick={() => {
-          //   setPopup(false);
-          // }}
-        >
+        <div className='fixed w-screen z-40 top-0' style={{ height: "100vh" }}>
           <Login setPopup={setPopup} />
         </div>
       ) : null}

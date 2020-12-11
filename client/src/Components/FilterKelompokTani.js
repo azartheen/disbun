@@ -8,8 +8,16 @@ import checked from "../Assets/checked.svg";
 import unChecked from "../Assets/unChecked.svg";
 import { useQuery } from "urql";
 
-const listKomoditas = `query MyQuery {
-  disbun_tani(distinct_on: komoditas_utama) {
+const listFill = `query MyQuery {
+  kelas:disbun_tani(distinct_on: kelas_kelompok) {
+    kelas_kelompok
+  }
+  koperasi: disbun_tani(distinct_on: nama_koperasi) {
+    nama_koperasi
+  }
+}`;
+const listKomoditas = `query MyQuery($kab:String, $kec:String, $kel:String) {
+  disbun_tani(distinct_on: tanaman, where: {kecamatan_: {_eq: $kec}, kab_: {_eq: $kab}, desa_1: {_eq: $kel}}) {
     komoditas_utama
   }
 }`;
@@ -55,6 +63,7 @@ const data = [
 export default function FilterKelompokTani({ isCari }) {
   const [showKomoditas, setShowKomoditas] = React.useState(false);
   const [listKomo, setListKomo] = React.useState([]);
+  const [listFil, setListFil] = React.useState([]);
 
   const [res] = useQuery({
     query: listKomoditas,
@@ -64,7 +73,7 @@ export default function FilterKelompokTani({ isCari }) {
     if (!res.data) {
       console.log(res.error);
     } else {
-      setListKomo(res.data.disbun_tani);
+      setListKomo(res.data.komoditas);
     }
   }, [res]);
   return (

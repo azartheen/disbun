@@ -5,27 +5,7 @@ import dpDown from "../Assets/dpDown.svg";
 import AppContext from "../Context/AppContext";
 import { useQuery } from "urql";
 import dataKabKec from "../Assets/kab_kec_des_disbun.json";
-
-// const kabDisbun = `
-// query MyQuery {
-//   disbun_tani(distinct_on: kab_kot) {
-//     kab_kot
-//   }
-// }`;
-
-// const kecDisbun = `query MyQuery($kab:String) {
-//   disbun_tani(distinct_on: kec, where: {kab_kot: {_eq: $kab}}) {
-//     kec
-//   }
-// }
-// `;
-
-// const kelDisbun = `query MyQuery($kec:String) {
-//   disbun_tani(distinct_on: kel, where: {kec: {_eq: $kec}}) {
-//     kel
-//   }
-// }
-// `;
+import dataKabKecTani from "../Assets/kab_kec_des_tani.json";
 
 const getLoc = `query MyQuery($kab: String, $kec: String, $kel: String) {
   disbun_tanaman(where: {kecamatan_: {_eq: $kec}, kab_: {_eq: $kab}, desa_1: {_eq: $kel}}, limit: 1) {
@@ -36,96 +16,102 @@ const getLoc = `query MyQuery($kab: String, $kec: String, $kel: String) {
 }
 `;
 
-export default function Search({ isCari, setIsCari }) {
-  const { jenisMap, dispatch, kec, kab, kel } = React.useContext(AppContext);
+const getLocTani = `query MyQuery($kab: String, $kec: String, $kel: String) {
+  disbun_tani(limit: 1, where: {kab_kot: {_eq: $kab}, kec: {_eq: $kec}, kel: {_eq: $kel}}) {
+    longitude
+    latitude
+    id_desa
+  }
+}`;
+export default function Search({ setIsCari }) {
+  const { jenisMap, dispatch, kec, kab, kel, isCari } = React.useContext(
+    AppContext
+  );
   const [listKab, setListKab] = React.useState([]);
   const [listKec, setListKec] = React.useState([]);
   const [listkel, setListKel] = React.useState([]);
-  const [lok, setLok] = React.useState();
-  // const [newQueryKab, setnewQueryKab] = React.useState(kabTanam);
-  // const [newQueryKec, setnewQueryKec] = React.useState(kecTanam);
-  // const [newQueryKel, setnewQueryKel] = React.useState(kelTanam);
-  // const [res] = useQuery({
-  //   query: newQueryKab,
-  // });
+  const [disable, setDisable] = React.useState(false);
+  const [lok, setLok] = React.useState(null);
+  const [kabkec, setKabKec] = React.useState(dataKabKec);
 
   const [loc] = useQuery({
     query: getLoc,
     variables: { kab: kab, kec: kec, kel: kel },
   });
 
-  // const [resKec] = useQuery({
-  //   query: newQueryKec,
-  //   variables: { kab: kab },
-  // });
-
-  // const [resKel] = useQuery({
-  //   query: newQueryKel,
-  //   variables: { kec: kec },
-  // });
+  const [locTani] = useQuery({
+    query: getLocTani,
+    variables: { kab: kab, kec: kec, kel: kel },
+  });
 
   React.useEffect(() => {
-    if (!loc.data) {
-      console.log(loc.error);
+    if (jenisMap) {
+      setKabKec(dataKabKecTani);
     } else {
-      setLok(loc.data.disbun_tanaman);
-      console.log(loc.data.disbun_tanaman);
+      setKabKec(dataKabKec);
     }
-  }, [loc]);
-
-  // React.useEffect(() => {
-  //   if (!resKel.data) {
-  //     console.log(resKel.error);
-  //   } else {
-  //     if (jenisMap) {
-  //       setListKel(resKel.data.disbun_tani);
-  //     } else {
-  //       setListKel(resKel.data.disbun_tanaman);
-  //     }
-  //   }
-  // }, [resKel]);
-
-  // React.useEffect(() => {
-  //   if (!resKec.data) {
-  //     console.log(resKec.error);
-  //   } else {
-  //     if (jenisMap) {
-  //       setListKec(resKec.data.disbun_tani);
-  //     } else {
-  //       setListKec(resKec.data.disbun_tanaman);
-  //     }
-  //   }
-  // }, [resKec]);
-
-  // React.useEffect(() => {
-  //   if (!res.data) {
-  //     console.log(res.error);
-  //   } else {
-  //     if (jenisMap) {
-  //       setListKab(res.data.disbun_tani);
-  //     } else {
-  //       setListKab(res.data.disbun_tanaman);
-  //     }
-  //   }
-  // }, [res]);
+  }, [jenisMap]);
 
   React.useEffect(() => {
-    setListKab(Object.keys(dataKabKec));
-    console.log(Object.keys(dataKabKec));
-  }, [dataKabKec]);
+    if (!jenisMap) {
+      if (!loc.data) {
+        console.log(loc.error);
+        setDisable(true);
+      } else {
+        if (loc.data.disbun_tanaman.length !== 0) {
+          console.log(loc.data.disbun_tanaman[0]);
+          const dataTanam = loc.data.disbun_tanaman[0];
+          if (lok && lok.id_desa === dataTanam.id_desa) {
+            setDisable(true);
+          } else {
+            setDisable(false);
+          }
+          setLok(dataTanam);
+        } else {
+          setDisable(true);
+        }
+      }
+    }
+  }, [loc, jenisMap]);
+
+  React.useEffect(() => {
+    if (jenisMap) {
+      if (!locTani.data) {
+        console.log(locTani.error);
+        setDisable(true);
+      } else {
+        if (locTani.data.disbun_tani.length !== 0) {
+          console.log(locTani.data.disbun_tani[0]);
+          const dataTanam = locTani.data.disbun_tani[0];
+          if (lok && lok.id_desa === dataTanam.id_desa) {
+            setDisable(true);
+          } else {
+            setDisable(false);
+          }
+          setLok(dataTanam);
+        } else {
+          setDisable(true);
+        }
+      }
+    }
+  }, [locTani, jenisMap]);
+
+  React.useEffect(() => {
+    setListKab(Object.keys(kabkec));
+    console.log(Object.keys(kabkec));
+  }, [kabkec]);
 
   React.useEffect(() => {
     if (kab !== "") {
-      setListKec(Object.keys(dataKabKec[kab]));
-      console.log(Object.keys(dataKabKec[kab]));
+      setListKec(Object.keys(kabkec[kab]));
     }
-  }, [kab]);
+  }, [kab, kabkec]);
 
   React.useEffect(() => {
     if (kec !== "") {
-      setListKel(dataKabKec[kab][kec]);
+      setListKel(kabkec[kab][kec]);
     }
-  }, [kec]);
+  }, [kec, kab, kabkec]);
 
   return (
     <React.Fragment>
@@ -157,13 +143,21 @@ export default function Search({ isCari, setIsCari }) {
                 className='block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded focus:outline-none focus:shadow-outline'
                 onChange={(e) => {
                   dispatch({
+                    type: "setKec",
+                    payload: "",
+                  });
+                  dispatch({
+                    type: "setKel",
+                    payload: "",
+                  });
+                  dispatch({
                     type: "setKab",
                     payload: e.target.value,
                   });
                 }}
                 value={kab}
               >
-                <option value={""}>Semua Kabupaten</option>
+                <option value={""}>Pilih Kabupaten</option>
                 {listKab &&
                   listKab.map((data, idx) => (
                     <React.Fragment key={data + idx}>
@@ -189,13 +183,17 @@ export default function Search({ isCari, setIsCari }) {
                 className='block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded focus:outline-none focus:shadow-outline'
                 onChange={(e) => {
                   dispatch({
+                    type: "setKel",
+                    payload: "",
+                  });
+                  dispatch({
                     type: "setKec",
                     payload: e.target.value,
                   });
                 }}
                 value={kec}
               >
-                <option value={""}>Semua Kecamatan </option>
+                <option value={""}>Pilih Kecamatan </option>
                 {listKec &&
                   listKec.map((data, idx) => (
                     <React.Fragment key={data + idx}>
@@ -228,7 +226,7 @@ export default function Search({ isCari, setIsCari }) {
                 }}
                 value={kel}
               >
-                <option value={""}>Semua Kelurahan </option>
+                <option value={""}>Pilih Kelurahan </option>
                 {listkel &&
                   listkel.map((data, idx) => (
                     <React.Fragment key={data + idx}>
@@ -245,11 +243,16 @@ export default function Search({ isCari, setIsCari }) {
 
         <div className='m-auto'>
           <button
-            className={`bg-green-600 rounded w-10 m-auto ${
-              isCari ? "lg:ml-12" : "m-auto"
-            } `}
+            disabled={disable}
+            className={`${
+              disable ? "bg-gray-600 cursor-not-allowed" : "bg-green-600"
+            } rounded w-10 m-auto ${isCari ? "lg:ml-12" : "m-auto"} `}
             onClick={() => {
               setIsCari(!isCari);
+              dispatch({
+                type: "setIdDesa",
+                payload: lok,
+              });
             }}
           >
             <img src={search} alt='cari' className='m-auto p-3' />

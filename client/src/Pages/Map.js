@@ -13,9 +13,9 @@ export default function Map() {
   const mapElementRef = React.useRef(null);
   const [mapload, setMapLoad] = React.useState(false);
   const mapRef = React.useRef(null);
-  const { jenisMap } = React.useContext(AppContext);
-  const [isCari, setIsCari] = React.useState(false);
-  const [showFilter, setShowFilter] = React.useState(false);
+  const { jenisMap, showFilter, dispatch } = React.useContext(AppContext);
+  // const [isCari, setIsCari] = React.useState(false);
+  // const [showFilter, setShowFilter] = React.useState(false);
 
   React.useEffect(() => {
     mapboxgl.accessToken =
@@ -47,16 +47,28 @@ export default function Map() {
 
   const cariTimer = (cari) => {
     function show() {
-      setShowFilter(!showFilter);
+      dispatch({
+        type: "setShowFil",
+        payload: !showFilter,
+      });
     }
     function search() {
-      setIsCari(cari);
+      dispatch({
+        type: "setIsCari",
+        payload: cari,
+      });
     }
     if (!cari) {
       setTimeout(search, 200);
-      setShowFilter(!showFilter);
+      dispatch({
+        type: "setShowFil",
+        payload: !showFilter,
+      });
     } else {
-      setIsCari(cari);
+      dispatch({
+        type: "setIsCari",
+        payload: cari,
+      });
       setTimeout(show, 1000);
     }
   };
@@ -78,7 +90,7 @@ export default function Map() {
             ) : (
               <FilterPetaLahan isCari={showFilter} />
             )}
-            <Search isCari={isCari} setIsCari={cariTimer} />
+            <Search setIsCari={cariTimer} />
             {jenisMap ? (
               <div
                 style={{

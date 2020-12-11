@@ -1,0 +1,2574 @@
+﻿{
+  "KAB BANDUNG": {
+    "ARJASARI": [
+      "ANCOLMEKAR",
+      "ARJASARI",
+      "MANGUNJAYA",
+      "MEKARJAYA",
+      "PINGGIRSARI",
+      "WARGALUYU"
+    ],
+    "BALEENDAH": [
+      "BALEENDAH"
+    ],
+    "CANGKUANG": [
+      "PANANJUNG"
+    ],
+    "CICALENGKA": [
+      "BABAKAN PEUTEUY",
+      "DAMPIT",
+      "NAGROG",
+      "NARAWITA",
+      "TANJUNGWANGI"
+    ],
+    "CIKANCUNG": [
+      "CIKANCUNG",
+      "CILULUK",
+      "MANDALASARI",
+      "MEKARLAKSANA"
+    ],
+    "CILENGKRANG": [
+      "CILENGKRANG",
+      "CIPANJALU",
+      "CIPOREAT",
+      "GIRIMEKAR",
+      "MELATIWANGI"
+    ],
+    "CILEUNYI": [
+      "CIBIRU WETAN",
+      "CILEUNYI WETAN"
+    ],
+    "CIMAUNG": [
+      "CAMPAKAMULYA",
+      "CIKALONG",
+      "MALASARI",
+      "MEKARSARI",
+      "PASIRHUNI",
+      "SUKAMAJU"
+    ],
+    "CIMENYAN": [
+      "CIBURIAL",
+      "CIKADUT",
+      "CIMENYAN",
+      "MANDALAMEKAR",
+      "MEKARMANIK"
+    ],
+    "CIPARAY": [
+      "BABAKAN",
+      "CIHEULANG",
+      "MEKARLAKSANA"
+    ],
+    "CIWIDEY": [
+      "CIWIDEY",
+      "LEBAKMUNCANG",
+      "RAWABOGO",
+      "SUKAWENING"
+    ],
+    "IBUN": [
+      "DUKUH",
+      "IBUN",
+      "LAKSANA",
+      "MEKARWANGI",
+      "NEGLASARI"
+    ],
+    "KERTASARI": [
+      "CIBEUREUM",
+      "CIHAWUK",
+      "CIKEMBANG",
+      "NEGLAWANGI",
+      "SUKAPURA",
+      "TARUMAJAYA"
+    ],
+    "KUTAWARINGIN": [
+      "CILAME"
+    ],
+    "NAGREG": [
+      "BOJONG",
+      "CIARO",
+      "CIHERANG",
+      "CITAMAN",
+      "GANJAR SABAR",
+      "MANDALAWANGI"
+    ],
+    "PACET": [
+      "CANANGGELA",
+      "CIKAWAO",
+      "CIKITU",
+      "CIPEUJEUH",
+      "MANDALAHAJI",
+      "MEKARJAYA",
+      "NAGRAK",
+      "PANGAUBAN",
+      "SUKARAME"
+    ],
+    "PANGALENGAN": [
+      "LAMAJANG",
+      "MARGALUYU",
+      "MARGAMUKTI",
+      "MARGAMULYA",
+      "PANGALENGAN",
+      "PULOSARI",
+      "SUKALUYU",
+      "SUKAMANAH",
+      "TRIBAKTIMULYA",
+      "WANASUKA",
+      "WARNASARI"
+    ],
+    "PASEH": [
+      "CIJAGRA",
+      "CIPAKU",
+      "DRAWATI",
+      "LOA",
+      "SINDANGSARI"
+    ],
+    "PASIRJAMBU": [
+      "CIBODAS",
+      "CIKONENG",
+      "CISONDARI",
+      "MARGAMULYA",
+      "MEKARSARI",
+      "SUGIHMUKTI",
+      "TENJOLAYA"
+    ],
+    "RANCABALI": [
+      "CIPELAH",
+      "INDRAGIRI"
+    ],
+    "SOREANG": [
+      "PANYIRAPAN",
+      "SUKAJADI",
+      "SUKANAGARA"
+    ]
+  },
+  "KAB BANDUNG BARAT": {
+    "BATUJAJAR": [
+      "SELACAU"
+    ],
+    "CIHAMPELAS": [
+      "PATARUMAN",
+      "SINGAJAYA",
+      "SITUWANGI",
+      "TANJUNGWANGI"
+    ],
+    "CIKALONGWETAN": [
+      "CIKALONG",
+      "CIPADA",
+      "CIPTAGUMATI",
+      "CISOMANGBARAT",
+      "GANJARSARI",
+      "KANANGASARI",
+      "MANDALAMUKTI",
+      "MANDALASARI",
+      "MEKARJAYA",
+      "PUTERAN",
+      "RENDE",
+      "TENJOLAUT",
+      "WANGUNJAYA"
+    ],
+    "CILILIN": [
+      "BATULAYANG",
+      "CILILIN",
+      "KARANGANYAR",
+      "KARANGTANJUNG",
+      "KARYAMUKTI",
+      "KIDANGPANANJUNG",
+      "MUKAPAYUNG",
+      "NANGGERANG"
+    ],
+    "CIPATAT": [
+      "CIPATAT",
+      "CIPTAHARJA",
+      "KERTAMUKTI",
+      "MANDALASARI",
+      "MANDALAWANGI",
+      "RAJAMANDALAKULON",
+      "SARIMUKTI"
+    ],
+    "CIPEUNDEUY": [
+      "BOJONGMEKAR",
+      "CIPEUNDEUY",
+      "JATIMEKAR",
+      "MARGALAKSANA",
+      "MARGALUYU",
+      "NANGGELENG",
+      "NYENANG",
+      "SIRNARAJA",
+      "SUKAHAJI"
+    ],
+    "CISARUA": [
+      "SADANGMEKAR"
+    ],
+    "GUNUNGHALU": [
+      "BUNIJAYA",
+      "CELAK",
+      "GUNUNGHALU",
+      "SIRNAJAYA",
+      "TAMANJAYA",
+      "WARGASALUYU"
+    ],
+    "LEMBANG": [
+      "CIKOLE",
+      "JAYAGIRI",
+      "LEMBANG",
+      "SUNTENJAYA",
+      "WANGUNHARJA"
+    ],
+    "NGAMPRAH": [
+      "BOJONGKONENG",
+      "CILAME",
+      "CIMANGGU",
+      "PAKUHAJI"
+    ],
+    "PADALARANG": [
+      "CAMPAKA MEKAR",
+      "CIBURUY",
+      "JAYAMEKAR",
+      "KERTAMULYA",
+      "PADALARANG",
+      "TAGOGAPU"
+    ],
+    "PARONGPONG": [
+      "CIHANJUANGRAHAYU"
+    ],
+    "RONGGA": [
+      "BOJONG",
+      "BOJONGSALAM",
+      "CIBITUNG",
+      "CICADAS",
+      "SUKAMANAH",
+      "SUKARESMI"
+    ],
+    "SINDANGKERTA": [
+      "BUNINAGARA",
+      "MEKARWANGI",
+      "PASIRPOGOR",
+      "RANCASENGGANG",
+      "WANGUNSARI",
+      "WENINGGALIH"
+    ]
+  },
+  "KAB BEKASI": {
+    "BABELAN": [
+      "BUNIBAKTI",
+      "KEDUNGJAYA",
+      "MUARABAKTI"
+    ],
+    "BOJONGMANGU": [
+      "BOJONGMANGU",
+      "KARANGINDAH",
+      "KARANGMULYA",
+      "MEDALKRISNA",
+      "SUKABUNGAH"
+    ],
+    "CABANGBUNGIN": [
+      "JAYALAKSANA",
+      "LENGGAHJAYA",
+      "LENGGAHSARI",
+      "SETIALAKSANA",
+      "SINDANGJAYA",
+      "SINDANGSARI"
+    ],
+    "CIBARUSAH": [
+      "RIDOGALIH",
+      "RIDOMANAH",
+      "SIRNAJAYA"
+    ],
+    "CIBITUNG": [
+      "WANAJAYA"
+    ],
+    "CIKARANG BARAT": [
+      "CIKEDOKAN",
+      "KALIJAYA"
+    ],
+    "CIKARANG PUSAT": [
+      "HEGARMUKTI",
+      "JAYAMUKTI",
+      "PASIRANJI",
+      "PASIRTANJUNG",
+      "SUKAMAHI"
+    ],
+    "CIKARANG SELATAN": [
+      "SUKASEJATI"
+    ],
+    "CIKARANG TIMUR": [
+      "CIPAYUNG",
+      "KARANGSARI",
+      "LABANSARI",
+      "SERTAJAYA"
+    ],
+    "CIKARANG UTARA": [
+      "KARANGRAHARJA"
+    ],
+    "KARANG BAHAGIA": [
+      "KARANGMUKTI",
+      "KARANGRAHAYU",
+      "KARANGSETIA"
+    ],
+    "KEDUNG WARINGIN": [
+      "KARANGMEKAR"
+    ],
+    "MUARAGEMBONG": [
+      "PANTAI BAHAGIA",
+      "PANTAI BAKTI",
+      "PANTAI HARAPANJAYA"
+    ],
+    "PEBAYURAN": [
+      "BANTARJAYA",
+      "BANTARSARI",
+      "KARANGHAUR",
+      "KARANGJAYA",
+      "KARANGPATRI",
+      "KERTAJAYA",
+      "SUMBERSARI"
+    ],
+    "SERANG BARU": [
+      "CILANGKARA",
+      "JAYAMULYA",
+      "JAYASAMPURNA",
+      "NAGACIPTA",
+      "NAGASARI",
+      "SUKASARI"
+    ],
+    "SETU": [
+      "BURANGKENG",
+      "CIBENING",
+      "CIJENGKOL",
+      "CIKARAGEMAN",
+      "CILEDUG",
+      "KERTARAHAYU",
+      "LUBANGBUAYA",
+      "MUKTIJAYA",
+      "RAGAMANUNGGAL",
+      "TAMAN SARI"
+    ],
+    "SUKAKARYA": [
+      "SUKAINDAH",
+      "SUKAKARYA",
+      "SUKAMAKMUR"
+    ],
+    "SUKATANI": [
+      "BANJARSARI",
+      "SUKAHURIP",
+      "SUKAMANAH",
+      "SUKARUKUN"
+    ],
+    "SUKAWANGI": [
+      "SUKABUDI",
+      "SUKAMEKAR",
+      "SUKARINGIN",
+      "SUKATENANG"
+    ],
+    "TAMBELANG": [
+      "SUKAWIJAYA"
+    ]
+  },
+  "KAB BOGOR": {
+    "BABAKAN MADANG": [
+      "BOJONG KONENG",
+      "KARANGTENGAH"
+    ],
+    "CARIU": [
+      "BANTARKUNING",
+      "CIKUTAMAHI"
+    ],
+    "CIAWI": [
+      "BOJONG MURNI",
+      "CIBEDUG",
+      "CITAPEN"
+    ],
+    "CIGUDEG": [
+      "ARGAPURA"
+    ],
+    "CISARUA": [
+      "BATULAYANG",
+      "KOPO",
+      "TUGU UTARA"
+    ],
+    "JASINGA": [
+      "CURUG",
+      "JASINGA",
+      "JUGALA JAYA",
+      "KOLEANG",
+      "PAMAGERSARI",
+      "PANGRADIN",
+      "SETU",
+      "SIPAK",
+      "TEGALWANGI",
+      "WIRAJAYA"
+    ],
+    "LEUWILIANG": [
+      "BARENGKOK",
+      "KARACAK",
+      "KARYASARI",
+      "PABANGBON",
+      "PURASARI",
+      "PURASEDA"
+    ],
+    "LEUWISADENG": [
+      "SIBANTENG"
+    ],
+    "MEGAMENDUNG": [
+      "MEGAMENDUNG"
+    ],
+    "NANGGUNG": [
+      "CURUGBITUNG",
+      "MALASARI"
+    ],
+    "PAMIJAHAN": [
+      "CIASIHAN",
+      "CIASMARA",
+      "CIBUNIAN",
+      "PURWABAKTI"
+    ],
+    "RUMPIN": [
+      "GOBANG",
+      "LEUWIBATU",
+      "RABAK"
+    ],
+    "SUKAMAKMUR": [
+      "CIBADAK",
+      "SUKAHARJA",
+      "SUKAMAKMUR",
+      "SUKAMULYA",
+      "SUKAWANGI"
+    ]
+  },
+  "KAB CIAMIS": {
+    "BANJARANYAR": [
+      "BANJARANYAR",
+      "CIGAYAM",
+      "CIKASO",
+      "CIKUPA",
+      "KALIJAYA",
+      "KARYAMUKTI",
+      "LANGKAPSARI",
+      "PASAWAHAN",
+      "SINDANGRASA"
+    ],
+    "BANJARSARI": [
+      "BANJARSARI",
+      "CICAPAR",
+      "CIULU",
+      "KAWASEN",
+      "PURWASARI",
+      "RATAWANGI",
+      "SINDANGASIH",
+      "SINDANGSARI"
+    ],
+    "BAREGBEG": [
+      "BAREGBEG",
+      "MEKARJAYA",
+      "PUSAKANAGARA",
+      "SUKAMAJU"
+    ],
+    "CIAMIS": [
+      "BENTENG",
+      "CIGEMBOR",
+      "SINDANGRASA"
+    ],
+    "CIDOLOG": [
+      "CIPARAY",
+      "HEGARMANAH",
+      "JANGGALA",
+      "JELEGONG",
+      "SUKASARI"
+    ],
+    "CIHAURBEUTI": [
+      "CIHAURBEUTI",
+      "PADAMULYA",
+      "PASIRTAMIANG",
+      "SUMBERJAYA"
+    ],
+    "CIJEUNGJING": [
+      "BOJONGMENGGER",
+      "CIJEUNGJING",
+      "HANDAPHERANG",
+      "KARANGANYAR",
+      "KARANGKAMULYAN"
+    ],
+    "CIKONENG": [
+      "CIKONENG",
+      "CIMARI",
+      "DARMACAANG",
+      "KUJANG",
+      "MARGALUYU",
+      "NASOL",
+      "PANARAGAN"
+    ],
+    "CIMARAGAS": [
+      "BEBER",
+      "BOJONGMALANG",
+      "CIMARAGAS",
+      "JAYARAKSA",
+      "RAKSABAYA"
+    ],
+    "CIPAKU": [
+      "CIAKAR",
+      "PUSAKASARI",
+      "SUKAWENING"
+    ],
+    "CISAGA": [
+      "DANASARI",
+      "GIRIMUKTI",
+      "KEPEL",
+      "TANJUNGJAYA"
+    ],
+    "JATINAGARA": [
+      "CINTANAGARA",
+      "JATINAGARA",
+      "MULYASARI",
+      "SUKANAGARA"
+    ],
+    "KAWALI": [
+      "CITEUREUP",
+      "LINGGAPURA",
+      "PURWASARI",
+      "TALAGASARI"
+    ],
+    "LUMBUNG": [
+      "LUMBUNG",
+      "SADEWATA"
+    ],
+    "PAMARICAN": [
+      "BANGUNSARI",
+      "BANTARSARI",
+      "MARGAJAYA",
+      "NEGLASARI",
+      "PAMARICAN",
+      "SUKAHURIP"
+    ],
+    "PANAWANGAN": [
+      "JAGABAYA",
+      "SAGALAHERANG"
+    ],
+    "PANJALU": [
+      "HUJUNGTIWU",
+      "KERTAMANDALA",
+      "SANDINGTAMAN"
+    ],
+    "PANUMBANGAN": [
+      "BANJARANGSANA",
+      "JAYAGIRI",
+      "MEDANGLAYANG",
+      "PAYUNGAGUNG",
+      "PAYUNGSARI",
+      "SINDANGHERANG",
+      "SUKAKERTA"
+    ],
+    "PURWADADI": [
+      "BANTARDAWA",
+      "KUTAWARINGIN",
+      "PURWADADI",
+      "PURWAJAYA",
+      "SIDARAHAYU"
+    ],
+    "RAJADESA": [
+      "ANDAPRAJA",
+      "PURWARAJA",
+      "SUKAHARJA",
+      "SUKAJAYA",
+      "TANJUNGSARI",
+      "TIGAHERANG"
+    ],
+    "RANCAH": [
+      "BOJONGGEDANG",
+      "CILEUNGSIR",
+      "CISONTROL",
+      "GIRIHARJA",
+      "KARANGPARI",
+      "KAWUNGLARANG",
+      "KIARAPAYUNG",
+      "PATAKAHARJA",
+      "RANCAH",
+      "SITUMANDALA",
+      "WANGUNSARI"
+    ],
+    "SADANANYA": [
+      "MEKARJADI",
+      "TANJUNGSARI",
+      "WERASARI"
+    ],
+    "SINDANGKASIH": [
+      "SUKAMANAH",
+      "SUKARAJA"
+    ],
+    "SUKADANA": [
+      "BUNTER",
+      "CIPARIGI",
+      "MARGAHARJA",
+      "MARGAJAYA",
+      "SALAKARIA",
+      "SUKADANA"
+    ],
+    "SUKAMANTRI": [
+      "MEKARWANGI",
+      "SUKAMANTRI",
+      "TENGGERRAHARJA"
+    ],
+    "TAMBAKSARI": [
+      "KADUPANDAK",
+      "KARANGPANINGAL",
+      "KASO",
+      "MEKARSARI",
+      "SUKASARI",
+      "TAMBAKSARI"
+    ]
+  },
+  "KAB CIANJUR": {
+    "AGRABINTA": [
+      "BOJONGKASO",
+      "KARANGSARI",
+      "MEKARSARI",
+      "SINARLAUT",
+      "SUKAMANAH",
+      "WANASARI"
+    ],
+    "BOJONGPICUNG": [
+      "KEMANG"
+    ],
+    "CAMPAKA": [
+      "CAMPAKA",
+      "CIDADAP",
+      "CIMENTENG",
+      "GIRIMUKTI",
+      "KARYAMUKTI",
+      "MEKARJAYA",
+      "SUKADANA",
+      "WANGUNJAYA"
+    ],
+    "CAMPAKAMULYA": [
+      "CAMPAKAMULYA",
+      "CAMPAKAWARNA",
+      "SUKABUNGAH"
+    ],
+    "CIBEBER": [
+      "CIBOKOR",
+      "KANOMAN",
+      "KARANGNUNGGAL",
+      "SELAGEDANG"
+    ],
+    "CIBINONG": [
+      "BATULAWANG",
+      "CIBURIAL",
+      "CIKANGKARENG",
+      "GIRIJAYA",
+      "HAMERANG",
+      "MEKARMUKTI",
+      "PANANGGAPAN",
+      "SUKAJADI",
+      "SUKAMEKAR"
+    ],
+    "CIDAUN": [
+      "CIBULUH",
+      "CIDAMAR",
+      "CIMARAGANG",
+      "CISALAK",
+      "JAYAPURA",
+      "KARYABAKTI",
+      "KERTAJADI",
+      "PUNCAKBARU"
+    ],
+    "CIKADU": [
+      "CIKADU",
+      "MEKARLAKSANA",
+      "SUKAMULYA"
+    ],
+    "CIKALONGKULON": [
+      "CIJAGANG",
+      "CIRAMAGIRANG",
+      "MAJALAYA",
+      "MEKARMULYA",
+      "SUKAMULYA"
+    ],
+    "CILAKU": [
+      "MULYASARI"
+    ],
+    "CIPANAS": [
+      "BATULAWANG",
+      "CIMACAN",
+      "SINDANGLAYA"
+    ],
+    "CUGENANG": [
+      "CIBEUREUM",
+      "CIRUMPUT",
+      "PADALUYU",
+      "SUKAMULYA",
+      "WANGUNJAYA"
+    ],
+    "GEKBRONG": [
+      "CINTAASIH",
+      "GEKBRONG",
+      "KEBONPEUTEUY",
+      "SUKARATU"
+    ],
+    "HAURWANGI": [
+      "MEKARWANGI"
+    ],
+    "KADUPANDAK": [
+      "GANDASARI",
+      "SUKARESMI",
+      "SUKASARI",
+      "WARGAASIH"
+    ],
+    "LELES": [
+      "PUNCAKWANGI",
+      "SIRNASARI",
+      "SUKAJAYA"
+    ],
+    "MANDE": [
+      "CIANDAM",
+      "KUTAWARINGIN",
+      "MEKARJAYA",
+      "MURNISARI",
+      "SUKAMANAH"
+    ],
+    "NARINGGUL": [
+      "BALEGEDE",
+      "WANASARI",
+      "WANGUNSARI"
+    ],
+    "PAGELARAN": [
+      "BUNIJAYA",
+      "KERTARAHARJA",
+      "MEKARSARI",
+      "PADAMAJU",
+      "SINDANGKERTA",
+      "SITUHIANG"
+    ],
+    "PASIRKUDA": [
+      "GIRIMUKTI",
+      "PUSAKAJAYA",
+      "SIMPANG"
+    ],
+    "SINDANGBARANG": [
+      "GIRIMUKTI",
+      "JAYAGIRI",
+      "MUARACIKADU",
+      "TALAGASARI"
+    ],
+    "SUKALUYU": [
+      "MEKARJAYA"
+    ],
+    "SUKANAGARA": [
+      "CIGUHA",
+      "GUNUNGSARI",
+      "JAYAGIRI",
+      "SINDANGSARI",
+      "SUKAJEMBAR",
+      "SUKAKARYA",
+      "SUKALAKSANA",
+      "SUKAMEKAR",
+      "SUKANAGARA",
+      "SUKARAME"
+    ],
+    "SUKARESMI": [
+      "CIKANCANA",
+      "CIKANYERE",
+      "RAWABELUT",
+      "SUKARESMI"
+    ],
+    "TAKOKAK": [
+      "BUNGBANGSARI",
+      "CISUJEN",
+      "HEGARMANAH",
+      "PASAWAHAN",
+      "SIMPANG",
+      "SINDANGHAYU",
+      "SINDANGRESMI",
+      "SUKAGALIH"
+    ],
+    "TANGGEUNG": [
+      "CILONGSONG",
+      "SIRNAJAYA"
+    ]
+  },
+  "KAB CIREBON": {
+    "ASTANAJAPURA": [
+      "JAPURA BAKTI",
+      "JAPURA KIDUL",
+      "KANCI KULON",
+      "KENDAL",
+      "MERTAPADA WETAN",
+      "SIDAMULYA"
+    ],
+    "BABAKAN": [
+      "GEMBONGAN",
+      "PAKUSAMBEN",
+      "SERANG KULON"
+    ],
+    "CILEDUG": [
+      "BOJONGNEGARA",
+      "CILEDUG KULON",
+      "CILEDUG LOR",
+      "CILEDUG TENGAH",
+      "CILEDUG WETAN",
+      "DAMARGUNA",
+      "JATISEENG",
+      "JATISEENG KIDUL"
+    ],
+    "GEBANG": [
+      "DOMPYONG WETAN",
+      "GEBANG",
+      "GEBANG ILIR",
+      "GEBANG KULON",
+      "GEBANG MEKAR"
+    ],
+    "GREGED": [
+      "GREGED",
+      "LEBAKMEKAR",
+      "SINDANG KEMPENG"
+    ],
+    "KARANGSEMBUNG": [
+      "KALIMEANG",
+      "KARANGMALANG",
+      "KARANGMEKAR",
+      "KARANGSEMBUNG",
+      "KARANGSUWUNG",
+      "KARANGTENGAH",
+      "TAMBELANG"
+    ],
+    "KARANGWARENG": [
+      "BLENDER",
+      "JATIPIRING",
+      "KARANGANYAR",
+      "KARANGASEM",
+      "KARANGWANGI",
+      "KARANGWARENG",
+      "KUBANGDELEG"
+    ],
+    "LEMAHABANG": [
+      "ASEM",
+      "BELAWA",
+      "CIPEUJEUH KULON",
+      "LEMAHABANG",
+      "LEMAHABANG KULON",
+      "SARAJAYA",
+      "SIGONG",
+      "SINDANGLAUT",
+      "WANGKELANG"
+    ],
+    "MUNDU": [
+      "LUWUNG",
+      "MUNDUMESIGIT"
+    ],
+    "PABEDILAN": [
+      "PABEDILAN KULON"
+    ],
+    "PABUARAN": [
+      "PABUARAN KIDUL",
+      "PABUARAN LOR",
+      "PABUARAN WETAN",
+      "SUKADANA"
+    ],
+    "PANGENAN": [
+      "BERINGIN",
+      "GETRAKMOYAN",
+      "JAPURA LOR"
+    ],
+    "PASALEMAN": [
+      "CIGOBANG",
+      "CIGOBANG WANGI",
+      "CILENGKRANG",
+      "CILENGKRANG GIRANG",
+      "PASALEMAN",
+      "TANJUNGANOM",
+      "TONJONG"
+    ],
+    "SEDONG": [
+      "KERTAWANGUN"
+    ],
+    "SUSUKAN LEBAK": [
+      "CIAWIASIH",
+      "CURUG",
+      "CURUG WETAN",
+      "PASAWAHAN",
+      "SAMPIH",
+      "SUSUKAN AGUNG",
+      "SUSUKAN LEBAK"
+    ],
+    "WALED": [
+      "CIKULAK KIDUL",
+      "GUNUNGSARI",
+      "MEKARSARI",
+      "WALED ASEM",
+      "WALED DESA",
+      "WALED KOTA"
+    ]
+  },
+  "KAB GARUT": {
+    "BANJARWANGI": [
+      "BANJARWANGI",
+      "BOJONG",
+      "DANGIANG",
+      "JAYABAKTI",
+      "KADONGDONG",
+      "MULYAJAYA",
+      "PADAHURIP",
+      "TALAGAJAYA",
+      "TALAGASARI",
+      "TANJUNGJAYA",
+      "WANGUNJAYA"
+    ],
+    "BANYURESMI": [
+      "CIPICUNG",
+      "KARYAMUKTI",
+      "PAMEKARSARI",
+      "SUKAKARYA",
+      "SUKALAKSANA",
+      "SUKARAJA",
+      "SUKARATU"
+    ],
+    "BAYONGBONG": [
+      "CIBURUY",
+      "CIELA",
+      "CINISTI",
+      "HEGARMANAH",
+      "KARYAJAYA",
+      "MULYASARI",
+      "PAMALAYAN",
+      "PANEMBONG",
+      "SUKAMANAH",
+      "SUKARAME"
+    ],
+    "BL LIMBANGAN": [
+      "PANGEUREUNAN",
+      "PASIRWARU",
+      "SIMPEN KALER",
+      "SIMPEN KIDUL",
+      "SURABAYA"
+    ],
+    "BUNGBULANG": [
+      "BOJONG",
+      "MEKARJAYA",
+      "SINARJAYA",
+      "TEGALLEGA"
+    ],
+    "CARINGIN": [
+      "CARINGIN",
+      "CIMAHI",
+      "INDRALAYANG",
+      "PURBAYANI",
+      "SAMUDERAJAYA",
+      "SUKARAME"
+    ],
+    "CIBALONG": [
+      "KARYAMUKTI",
+      "MAROKO",
+      "MEKAR MUKTI",
+      "MEKARSARI",
+      "NAJATEN",
+      "SAGARA",
+      "SIMPANG"
+    ],
+    "CIBATU": [
+      "GIRIMUKTI",
+      "KERESEK",
+      "KERTAJAYA",
+      "PADASUKA",
+      "SINDANGSUKA",
+      "WANAKERTA"
+    ],
+    "CIBIUK": [
+      "CIBIUK KIDUL",
+      "CIPAREUAN",
+      "LINGKUNGPASIR"
+    ],
+    "CIGEDUG": [
+      "BARUSUDA",
+      "CIGEDUG",
+      "CINTANAGARA",
+      "SUKAHURIP"
+    ],
+    "CIHURIP": [
+      "CIHURIP",
+      "CISANGKAL",
+      "JAYAMUKTI",
+      "MEKARWANGI"
+    ],
+    "CIKAJANG": [
+      "CIBODAS",
+      "CIKANDANG",
+      "CIPANGRAMATAN",
+      "GIRIAWAS",
+      "KRAMATWANGI",
+      "MARGAMULYA",
+      "MEKARJAYA"
+    ],
+    "CIKELET": [
+      "AWASSAGARA",
+      "CIKELET",
+      "CIROYOM",
+      "KARANGSARI",
+      "KERTAMUKTI",
+      "LINGGAMANIK",
+      "PAMALAYAN"
+    ],
+    "CILAWU": [
+      "DAYEUHMANGGUNG",
+      "MEKARMUKTI",
+      "SUKAMAJU",
+      "SUKAMUKTI",
+      "SUKAMURNI"
+    ],
+    "CISEWU": [
+      "CIKARANG",
+      "CISEWU",
+      "GIRIMUKTI",
+      "KARANGSEWU",
+      "MEKARSEWU",
+      "NYALINDUNG",
+      "PANGGALIH"
+    ],
+    "CISOMPET": [
+      "CIHAURKUNING",
+      "CIKONDANG",
+      "CISOMPET",
+      "DEPOK",
+      "JATISARI",
+      "MARGAMULYA",
+      "NEGLASARI",
+      "PANYINDANGAN",
+      "SINDANGSARI",
+      "SUKAMUKTI",
+      "SUKANAGARA"
+    ],
+    "CISURUPAN": [
+      "CIPAGANTI",
+      "CISERO",
+      "KRAMATWANGI",
+      "PAMULIHAN",
+      "PANGAUBAN",
+      "SIRNAJAYA"
+    ],
+    "GARUT KOTA": [
+      "MARGAWATI",
+      "PAKUWON"
+    ],
+    "KADUNGORA": [
+      "HARUMANSARI",
+      "HEGARSARI",
+      "KADUNGORA",
+      "KARANGMULYA",
+      "KARANGTENGAH",
+      "MANDALASARI",
+      "MEKARBAKTI",
+      "RANCASALAK"
+    ],
+    "KARANGPAWITAN": [
+      "KARANGMULYA",
+      "KARANGPAWITAN",
+      "LEBAKAGUNG",
+      "SINDANGGALIH",
+      "SINDANGPALAY",
+      "SITUGEDE",
+      "SITUSARI",
+      "TANJUNGSARI"
+    ],
+    "KARANGTENGAH": [
+      "CARINGIN",
+      "CINTA",
+      "SINDANGGALIH"
+    ],
+    "KERSAMANAH": [
+      "SUKAMAJU"
+    ],
+    "LELES": [
+      "CIBURIAL",
+      "CIPANCAR",
+      "DANO",
+      "HARUMAN",
+      "JANGKURANG",
+      "LEMBANG",
+      "MARGALUYU",
+      "SUKARAME"
+    ],
+    "LEUWIGOONG": [
+      "DUNGUSIKU",
+      "KARANGANYAR",
+      "KARANGSARI",
+      "LEUWIGOONG",
+      "MARGACINTA",
+      "MARGAHAYU",
+      "TAMBAK SARI"
+    ],
+    "MALANGBONG": [
+      "BARU DUA",
+      "CIBUNAR",
+      "CILAMPUYANG",
+      "GIRIMAKMUR"
+    ],
+    "MEKARMUKTI": [
+      "JAYABAYA",
+      "KARANGWANGI",
+      "MEKARMUKTI",
+      "MEKARSARI"
+    ],
+    "PAKENJENG": [
+      "JATIWANGI",
+      "JAYAMEKAR",
+      "KARANGSARI",
+      "NEGLASARI",
+      "PANYINDANGAN",
+      "PASIRLANGU",
+      "SUKAMULYA",
+      "TALAGAWANGI",
+      "TANJUNGJAYA",
+      "TANJUNGMULYA",
+      "TEGALGEDE",
+      "WANGUNJAYA"
+    ],
+    "PAMEUNGPEUK": [
+      "BOJONG",
+      "BOJONG KIDUL",
+      "JATIMULYA",
+      "PAAS",
+      "PAMEUNGPEUK",
+      "SIRNABAKTI"
+    ],
+    "PAMULIHAN": [
+      "GARUMUKTI",
+      "LINGGARJATI",
+      "PAKENJENG",
+      "PANANJUNG",
+      "PANAWA"
+    ],
+    "PANGATIKAN": [
+      "BABAKAN LOA"
+    ],
+    "PASIRWANGI": [
+      "BARUSARI",
+      "KARYAMEKAR",
+      "PADAMULYA",
+      "PADASUKA",
+      "PADAWAAS",
+      "PASIRKIAMIS",
+      "PASIRWANGI",
+      "TALAGA"
+    ],
+    "PEUNDEUY": [
+      "SARIBAKTI",
+      "SUKANAGARA",
+      "TOBLONG"
+    ],
+    "SAMARANG": [
+      "CISARUA",
+      "PARAKAN",
+      "SUKAKARYA",
+      "TANJUNG KARYA"
+    ],
+    "SELAAWI": [
+      "CIGAWIR",
+      "CIRAPUHAN",
+      "MEKARSARI",
+      "PELITAASIH"
+    ],
+    "SINGAJAYA": [
+      "CIGINTUNG",
+      "CIUDIAN",
+      "GIRIMUKTI",
+      "KARANGAGUNG",
+      "MEKARTANI",
+      "PANCASURA",
+      "SINGAJAYA",
+      "SUKAMULYA",
+      "SUKAWANGI"
+    ],
+    "SUCINARAJA": [
+      "TEGALPANJANG",
+      "TENJONAGARA"
+    ],
+    "SUKARESMI": [
+      "MEKARJAYA",
+      "SUKAJAYA",
+      "SUKALILAH",
+      "SUKARESMI"
+    ],
+    "SUKAWENING": [
+      "MEKARLUYU",
+      "PASANGGRAHAN",
+      "SUDALARANG",
+      "SUKAHAJI",
+      "SUKALUYU",
+      "SUKAWENING"
+    ],
+    "TALEGONG": [
+      "MEKARMULYA"
+    ],
+    "TAROGONG KALER": [
+      "JATI",
+      "MEKARJAYA",
+      "MEKARWANGI",
+      "PANJIWANGI",
+      "PASAWAHAN",
+      "RANCABANGO",
+      "SIRNAJAYA",
+      "SUKAJADI",
+      "SUKAWANGI",
+      "TANJUNG KAMUNING"
+    ],
+    "TAROGONG KIDUL": [
+      "MEKARGALIH"
+    ],
+    "WANARAJA": [
+      "SINDANGMEKAR",
+      "SINDANGRATU",
+      "SUKAMENAK",
+      "WANAJAYA",
+      "WANAMEKAR"
+    ]
+  },
+  "KAB INDRAMAYU": {
+    "ANJATAN": [
+      "BUGIS",
+      "CILANDAK LOR",
+      "LEMPUYANG"
+    ],
+    "BALONGAN": [
+      "BALONGAN",
+      "GELARMENDALA",
+      "SUDIMAMPIR",
+      "TEGAL SEMBADRA",
+      "TEGALURUNG"
+    ],
+    "BANGODUA": [
+      "BANGODUA",
+      "BEDUYUT",
+      "KARANGGETAS",
+      "MALANGSARI",
+      "MULYASARI",
+      "RANCASARI",
+      "TEGALGIRANG",
+      "WANASARI"
+    ],
+    "CIKEDUNG": [
+      "AMIS",
+      "LOYANG"
+    ],
+    "GABUSWETAN": [
+      "KEDUNG DAWA"
+    ],
+    "GANTAR": [
+      "BANTARWARU"
+    ],
+    "INDRAMAYU": [
+      "DUKUH",
+      "KARANGANYAR",
+      "PEKANDANGAN JAYA",
+      "PLUMBON",
+      "SINGARAJA",
+      "TELUKAGUNG"
+    ],
+    "JATIBARANG": [
+      "BULAK LOR",
+      "JATIBARANG",
+      "JATIBARANG BARU",
+      "JATISAWIT",
+      "KEBULEN",
+      "PAWIDEAN",
+      "SUKALILA"
+    ],
+    "JUNTINYUAT": [
+      "DADAP",
+      "JUNTIKEBON",
+      "JUNTIKEDOKAN",
+      "JUNTUNYUAT",
+      "SEGERAN"
+    ],
+    "KANDANGHAUR": [
+      "BULAK",
+      "KARANGMULYA"
+    ],
+    "KARANGAMPEL": [
+      "BENDA",
+      "DUKUH JERUK",
+      "DUKUH TENGAH",
+      "KAPLONGAN LOR",
+      "KARANGAMPEL",
+      "PRINGGACALA",
+      "TANJUNGSARI"
+    ],
+    "KEDOKAN BUNDER": [
+      "CANGKINGAN",
+      "JAYALAKSANA",
+      "JAYAWINANGUN",
+      "KAPLONGAN",
+      "KEDOKANBUNDER",
+      "KEDOKANBUNDERWETAN"
+    ],
+    "KERTASEMAYA": [
+      "JAMBE",
+      "JENGKOK",
+      "KERTASEMAYA",
+      "KLIWED",
+      "LARANGAN JAMBE",
+      "MANGUNTARA",
+      "SUKAWERA",
+      "TEGAL WIRANGRONG",
+      "TENAJAR",
+      "TENAJAR KIDUL",
+      "TENAJAR LOR",
+      "TULUNGAGUNG"
+    ],
+    "KRANGKENG": [
+      "DUKUHJATI",
+      "KALIANYAR",
+      "KRANGKENG",
+      "TEGALMULYA"
+    ],
+    "LELEA": [
+      "TUNGGUL PAYUNG"
+    ],
+    "PASEKAN": [
+      "BRONDONG",
+      "PABEAN ILIR",
+      "PAGIRIKAN",
+      "PASEKAN"
+    ],
+    "PATROL": [
+      "BUGEL"
+    ],
+    "SINDANG": [
+      "PANYINDANGAN WETAN",
+      "RAMBATAN WETAN"
+    ],
+    "SUKAGUMIWANG": [
+      "BONDAN",
+      "CADANG PINGGAN",
+      "CIBEBER",
+      "GUNUNGSARI",
+      "SUKAGUMIWANG",
+      "TERSANA"
+    ],
+    "TRISI": [
+      "CIKAWUNG",
+      "KARANGASEM"
+    ],
+    "TUKDANA": [
+      "BODAS",
+      "CANGKO",
+      "GADEL",
+      "KARANGKERTA",
+      "KERTICALA",
+      "LAJER",
+      "MEKARSARI",
+      "PAGEDANGAN",
+      "RANCAJAWAT",
+      "SUKADANA",
+      "SUKAMULYA"
+    ],
+    "WIDASARI": [
+      "BANGKALOA ILIR",
+      "BUNDER",
+      "KALENSARI",
+      "KONGSIJAYA",
+      "LEUWIGEDE",
+      "UJUNGARIS",
+      "UJUNGJAYA",
+      "UJUNG PONDOK JAYA",
+      "WIDASARI"
+    ]
+  },
+  "KAB KARAWANG": {
+    "CILAMAYA KULON": [
+      "MANGGUNGJAYA",
+      "MUKTIJAYA",
+      "SUMURGEDE",
+      "TEGALURUNG"
+    ],
+    "CILAMAYA WETAN": [
+      "CIKALONG",
+      "CIKARANG",
+      "CILAMAYA",
+      "MEKARMAYA",
+      "MUARABARU",
+      "RAWAGEMPOL KULON",
+      "RAWAGEMPOL WETAN",
+      "SUKAKERTA",
+      "SUKATANI",
+      "TEGALWARU"
+    ],
+    "CILEBAR": [
+      "MEKARPOHACI"
+    ],
+    "PAKISJAYA": [
+      "SOLOKAN",
+      "TANAHBARU",
+      "TANJUNGBUNGIN",
+      "TANJUNGMEKAR",
+      "TANJUNGPAKIS",
+      "TELAGAJAYA",
+      "TELUKJAYA"
+    ],
+    "PANGKALAN": [
+      "MEDALSARI",
+      "TAMANSARI"
+    ],
+    "PURWASARI": [
+      "TEGALSARI"
+    ],
+    "TEGALWARU": [
+      "CINTALAKSANA",
+      "CINTAWARGI",
+      "KUTALANGGENG",
+      "KUTAMANEUH",
+      "MEKARBUANA",
+      "WARGASETRA"
+    ]
+  },
+  "KAB KUNINGAN": {
+    "CIAWIGEBANG": [
+      "SIDARAJA"
+    ],
+    "CIBEUREUM": [
+      "CIMARA",
+      "SUKADANA",
+      "SUMURWIRU",
+      "TARIKOLOT"
+    ],
+    "CIDAHU": [
+      "CIBULAN",
+      "CIEURIH",
+      "LEGOK"
+    ],
+    "CIGUGUR": [
+      "CISANTANA",
+      "PUNCAK"
+    ],
+    "CILEBAK": [
+      "JALATRANG",
+      "LEGOKHERANG",
+      "MADAPAJAYA"
+    ],
+    "CILIMUS": [
+      "BANDORASA WETAN",
+      "CIBEUREUM",
+      "CILIMUS"
+    ],
+    "CINIRU": [
+      "GUNUNGMANIK",
+      "LONGKEWANG"
+    ],
+    "CIWARU": [
+      "CITUNDUN"
+    ],
+    "DARMA": [
+      "BAKOM",
+      "CAGEUR",
+      "CIMENGA",
+      "CIPASUNG",
+      "DARMA",
+      "GUNUNGSIRAH",
+      "JAGARA",
+      "KARANGANYAR",
+      "KARANGSARI",
+      "KAWAH MANUK",
+      "PARUNG",
+      "SAKERTA BARAT",
+      "SAKERTA TIMUR",
+      "SITUSARI",
+      "SUKARASA"
+    ],
+    "GARAWANGI": [
+      "GEWOK",
+      "KADATUAN",
+      "PAKEMBANGAN"
+    ],
+    "HANTARA": [
+      "CIKONDANG",
+      "CITAPEN",
+      "HANTARA",
+      "TUNDAGAN"
+    ],
+    "JALAKSANA": [
+      "BABAKANMULYA",
+      "JALAKSANA",
+      "SANGKANERANG",
+      "SEMBAWA",
+      "SIDAMULYA",
+      "SUKAMUKTI"
+    ],
+    "KADUGEDE": [
+      "CIHERANG",
+      "MARGABAKTI",
+      "SINDANGJAWA"
+    ],
+    "KARANG KANCANA": [
+      "KARANGKANCANA"
+    ],
+    "KRAMATMULYA": [
+      "GEREBA",
+      "RAGAWACANA"
+    ],
+    "KUNINGAN": [
+      "CIBINUANG",
+      "CITANGTU",
+      "KEDUNGARUM"
+    ],
+    "LURAGUNG": [
+      "GUNUNGKARUNG",
+      "PANYOSOGAN",
+      "SINDANGSUKA",
+      "WALAHARCAGEUR"
+    ],
+    "MALEBER": [
+      "CIPAKEM"
+    ],
+    "MANDIRANCAN": [
+      "SEDA"
+    ],
+    "NUSAHERANG": [
+      "CIKADU",
+      "HAURKUNING"
+    ],
+    "PANCALANG": [
+      "DANALAMPAH",
+      "PANCALANG",
+      "PATALAGAN",
+      "SUMBAKELING"
+    ],
+    "SELAJAMBE": [
+      "BAGAWAT",
+      "CANTILAN",
+      "CIBERUNG",
+      "JAMBERAMA",
+      "PADAHURIP"
+    ],
+    "SUBANG": [
+      "BANGUNJAYA",
+      "GUNUNGACI",
+      "JATISARI",
+      "SITUGEDE",
+      "SUBANG"
+    ]
+  },
+  "KAB MAJALENGKA": {
+    "ARGAPURA": [
+      "CIBUNUT",
+      "CIKARACAK",
+      "GUNUNGWANGI",
+      "HAURSEAH",
+      "MEKARWANGI",
+      "SUKADANA",
+      "SUKASARI KALER",
+      "SUKASARI KIDUL"
+    ],
+    "BANJARAN": [
+      "CIMEONG",
+      "KAREO",
+      "PANYINDANGAN",
+      "SUNIA BARU"
+    ],
+    "BANTARUJEG": [
+      "BABAKANSARI",
+      "BANTARUJEG",
+      "CIMANGGUHILIR",
+      "CIPEUNDEUY",
+      "GUNUNGLARANG",
+      "SILIHWANGI",
+      "SINDANGHURIP",
+      "SUKAMENAK",
+      "WADOWETAN"
+    ],
+    "CIKIJING": [
+      "CILANCANG",
+      "JAGASARI",
+      "KANCANA",
+      "SUKASARI"
+    ],
+    "CINGAMBUL": [
+      "MANIIS"
+    ],
+    "KERTAJATI": [
+      "KERTAWINANGUN",
+      "MEKARJAYA",
+      "PASIRIPIS"
+    ],
+    "LEMAHSUGIH": [
+      "BANGBAYANG",
+      "BOROGOJOL",
+      "CIBULAN",
+      "CIGALEUH",
+      "CIPASUNG",
+      "CISALAK",
+      "KALAPADUA",
+      "KEPUH",
+      "LEMAHPUTIH",
+      "LEMAHSUGIH",
+      "MARGAJAYA",
+      "MEKARMULYA",
+      "PADAREK",
+      "SINARGALIH",
+      "SUKAJADI"
+    ],
+    "LIGUNG": [
+      "MAJASARI"
+    ],
+    "MAJA": [
+      "CIHAUR",
+      "WANAHAYU"
+    ],
+    "MAJALENGKA": [
+      "MAJALENGKA KULON",
+      "MAJALENGKA WETAN"
+    ],
+    "MALAUSMA": [
+      "BANYUSARI",
+      "BUNINAGARA",
+      "CIMUNCANG",
+      "GIRIMUKTI",
+      "MALAUSMA",
+      "SUKADANA",
+      "WERASARI"
+    ],
+    "RAJAGALUH": [
+      "PAYUNG",
+      "RAJAGALUH"
+    ],
+    "SINDANGWANGI": [
+      "UJUNGBERUNG"
+    ],
+    "TALAGA": [
+      "LAMPUYANG",
+      "MARGAMUKTI",
+      "MEKARRAHARJA",
+      "TALAGA WETAN"
+    ]
+  },
+  "KAB PANGANDARAN": {
+    "CIGUGUR": [
+      "CAMPAKA",
+      "CIGUGUR",
+      "CIMINDI",
+      "HARUMANDALA",
+      "KERTAJAYA"
+    ],
+    "CIJULANG": [
+      "BATUKARAS",
+      "CIAKAR",
+      "CIBANTEN",
+      "KERTAYASA",
+      "MARGACINTA"
+    ],
+    "CIMERAK": [
+      "BATUMALANG",
+      "CIMERAK",
+      "CIPARANTI",
+      "KERTAHARJA",
+      "KERTAMUKTI",
+      "LEGOKJAWA",
+      "LIMUSGEDE",
+      "MASAWAH",
+      "MEKARSARI",
+      "SINDANGSARI",
+      "SUKAJAYA"
+    ],
+    "KALIPUCANG": [
+      "BAGOLO",
+      "BANJARHARJA",
+      "CIBULUH",
+      "CIPARAKAN",
+      "EMPLAK",
+      "PAMOTAN",
+      "TUNGGILIS"
+    ],
+    "LANGKAPLANCAR": [
+      "BANGUNKARYA",
+      "BOJONG",
+      "BUNGUR RAYA",
+      "CIMANGGU",
+      "CISARUA",
+      "JADIKARYA",
+      "JADIMULYA",
+      "KARANGKAMIRI",
+      "LANGKAPLANCAR",
+      "MEKARWANGI"
+    ],
+    "MANGUNJAYA": [
+      "JANGRAGA",
+      "KERTAJAYA",
+      "MANGUNJAYA",
+      "SINDANGJAYA"
+    ],
+    "PADAHERANG": [
+      "BOJONGSARI",
+      "KARANGMULYA",
+      "KARANGSARI",
+      "KEDUNGWULUH",
+      "MARUYUNGSARI",
+      "PADAHERANG",
+      "PALEDAH",
+      "PANYUTRAN",
+      "PASIRGEULIS",
+      "SUKANAGARA"
+    ],
+    "PANGANDARAN": [
+      "BABAKAN",
+      "PAGERGUNUNG",
+      "PANANJUNG",
+      "PURBAHAYU",
+      "SIDOMULYO",
+      "SUKAHURIP"
+    ],
+    "PARIGI": [
+      "BOJONG",
+      "CILIANG",
+      "CINTAKARYA",
+      "CINTARATU",
+      "PARAKANMANGGU",
+      "PARIGI",
+      "SELASARI"
+    ],
+    "SIDAMULIH": [
+      "CIKALONG",
+      "CIKEMBULAN",
+      "KALIJATI",
+      "KERSARATU",
+      "SIDAMULIH"
+    ]
+  },
+  "KAB PURWAKARTA": {
+    "BOJONG": [
+      "BOJONG BARAT",
+      "BOJONG TIMUR",
+      "CIBINGBIN",
+      "CIHANJAWAR",
+      "CIKERIS",
+      "CILEUNCA",
+      "CIPEUNDEUY",
+      "KERTASARI",
+      "PANGKALAN",
+      "PASANGGRAHAN",
+      "PAWENANG",
+      "SINDANGPANON",
+      "SINDANGSARI",
+      "SUKAMANAH"
+    ],
+    "DARANGDAN": [
+      "CILINGGA",
+      "LINGGAMUKTI",
+      "NAGRAK",
+      "NANGEWER",
+      "PASIRANGIN",
+      "SADARKARYA"
+    ],
+    "KIARAPEDES": [
+      "CIBEBER",
+      "CIRACAS",
+      "GARDU",
+      "MARGALUYU",
+      "MEKARJAYA",
+      "PARAKANGAROKGEK",
+      "PUSAKAMULYA",
+      "SUMBERSARI",
+      "TARINGGULLANDEUH"
+    ],
+    "PONDOKSALAM": [
+      "BUNGURJAYA",
+      "GALUDRA",
+      "TANJUNGSARI"
+    ],
+    "WANAYASA": [
+      "BABAKAN",
+      "CIBUNTU",
+      "NAGROG",
+      "SUMURUGUL",
+      "TARINGGUL TENGAH",
+      "TARINGGUL TONGGOH",
+      "WANASARI",
+      "WANAYASA"
+    ]
+  },
+  "KAB SUBANG": {
+    "BINONG": [
+      "CICADAS"
+    ],
+    "CIBOGO": [
+      "CIBALANDONG JAYA"
+    ],
+    "CIJAMBE": [
+      "CIKADU",
+      "SUKAHURIP"
+    ],
+    "CIKAUM": [
+      "SINDANGSARI"
+    ],
+    "CIPEUNDEUY": [
+      "KARYAMUKTI"
+    ],
+    "CIPUNAGARA": [
+      "PADAMULYA",
+      "PARIGIMULYA",
+      "SIDAJAYA"
+    ],
+    "CISALAK": [
+      "CIGADOG",
+      "CIMANGGU",
+      "CISALAK",
+      "CUPUNAGARA",
+      "DARMAGA",
+      "GARDUSAYANG",
+      "MAYANG",
+      "SUKAKERTI"
+    ],
+    "DAWUAN": [
+      "CISAMPIH"
+    ],
+    "KASOMALANG": [
+      "BOJONGLOA",
+      "CIMANGLID",
+      "KASOMALANG KULON",
+      "KASOMALANG WETAN",
+      "PASANGGRAHAN",
+      "SUKAMELANG",
+      "TENJOLAYA"
+    ],
+    "PABUARAN": [
+      "KADAWUNG"
+    ],
+    "PAGADEN": [
+      "PAGEDAN"
+    ],
+    "SAGALAHERANG": [
+      "CURUGAGUNG",
+      "DAYEUH KOLOT",
+      "LELES",
+      "SAGALAHERANG KALER",
+      "SAGALAHERANG KIDUL",
+      "SUKAMANDI"
+    ],
+    "SERANGPANJANG": [
+      "CIJENGKOL",
+      "CIKUJANG",
+      "CIPANCAR",
+      "PONGGANG",
+      "TALAGASARI"
+    ],
+    "TANJUNGSIANG": [
+      "BUNIARA",
+      "CIBULUH",
+      "CIKAWUNG",
+      "CIMEUHMAL",
+      "GANDASOLI",
+      "KAWUNGLUWUK",
+      "RANCAMANGGUNG",
+      "SINDANGLAYA",
+      "SIRAP",
+      "TANJUNGSIANG"
+    ]
+  },
+  "KAB SUKABUMI": {
+    "BANTARGADUNG": [
+      "BANTARGADUNG",
+      "BOJONGGALING",
+      "BOYONGSARI",
+      "BOYONG SARI",
+      "LIMUSNUNGGAL",
+      "MANGUNJAYA"
+    ],
+    "BOJONGGENTENG": [
+      "BOJONGGENTENG"
+    ],
+    "CIAMBAR": [
+      "GINANJAR",
+      "WANGUNJAYA"
+    ],
+    "CIBADAK": [
+      "NEGLASARI"
+    ],
+    "CIBITUNG": [
+      "CIBITUNG",
+      "CIBODAS",
+      "CIDAHU",
+      "TALAGAMURNI"
+    ],
+    "CICANTAYAN": [
+      "CIMAHI"
+    ],
+    "CICURUG": [
+      "KUTAJAYA",
+      "MEKARSARI",
+      "NANGGERANG",
+      "PURWASARI"
+    ],
+    "CIDAHU": [
+      "BABAKANPARI",
+      "CIDAHU",
+      "GIRIJAYA",
+      "TANGKIL"
+    ],
+    "CIEMAS": [
+      "CIBENDA",
+      "CIEMAS",
+      "CIWARU",
+      "GIRIMUKTI",
+      "MEKARJAYA",
+      "MEKARSAKTI",
+      "TAMANJAYA"
+    ],
+    "CIKAKAK": [
+      "CILEUNGSING",
+      "CIMAJA",
+      "GANDASOLI",
+      "MARGALAKSANA",
+      "SIRNARASA",
+      "SUKAMAJU"
+    ],
+    "CIKEMBAR": [
+      "BOJONG",
+      "BOJONGKEMBAR",
+      "BOJONGRAHARJA",
+      "CIMANGGU",
+      "SUKAMAJU"
+    ],
+    "CIKIDANG": [
+      "BUMI SARI",
+      "CICAREUH",
+      "CIJAMBE",
+      "CIKARAE THOYYIBAH",
+      "CIKIRAY",
+      "GUNUNGMALANG",
+      "SAMPORA",
+      "TAMAN SARI"
+    ],
+    "CIMANGGU": [
+      "SUKAMANAH"
+    ],
+    "CIRACAP": [
+      "CIKANGKUNG",
+      "CIRACAP",
+      "GUNUNGBATU",
+      "MEKARSARI",
+      "PANGUMBAHAN",
+      "PASIRPANJANG",
+      "PURWASEDAR",
+      "UJUNG GENTENG"
+    ],
+    "CIREUNGHAS": [
+      "TEGALPANJANG"
+    ],
+    "CISAAT": [
+      "CIBATU"
+    ],
+    "CISOLOK": [
+      "CIKELAT",
+      "CISOLOK",
+      "GUNUNGKARAMAT",
+      "GUNUNGTANJUNG",
+      "KARANGPAPAK",
+      "SUKARAME"
+    ],
+    "CURUGKEMBAR": [
+      "BOJONG TUGU"
+    ],
+    "GEGERBITUNG": [
+      "CIENGANG",
+      "GEGERBITUNG",
+      "SUKAMANAH"
+    ],
+    "GUNUNGGURUH": [
+      "SIRNARESMI"
+    ],
+    "JAMPANGKULON": [
+      "BOJONGGENTENG",
+      "BOJONGSARI",
+      "CIPARAY",
+      "JAMPANGKULON",
+      "KARANGANYAR",
+      "TANJUNG"
+    ],
+    "JAMPANGTENGAH": [
+      "BANTARPANJANG",
+      "BOJONGJENGKOL",
+      "BOJONGTIPAR",
+      "PADABEUNGHAR",
+      "SINDANGRESMI"
+    ],
+    "KABANDUNGAN": [
+      "CIHAMERANG",
+      "CIPEUTEUY",
+      "MEKARJAYA",
+      "TUGUBANDUNG"
+    ],
+    "KADUDAMPIT": [
+      "GEDE PANGRANGO"
+    ],
+    "KALAPANUNGGAL": [
+      "GUNUNGENDUT",
+      "KALAPANUNGGAL",
+      "PALASARI GIRANG",
+      "PULOSARI"
+    ],
+    "KALIBUNDER": [
+      "CIMAHPAR",
+      "KALIBUNDER",
+      "MEKARWANGI",
+      "SEKARSARI",
+      "SUKALUYU"
+    ],
+    "KEBONPEDES": [
+      "KEBONPEDES"
+    ],
+    "LENGKONG": [
+      "CILANGKAP",
+      "LANGKAPJAYA",
+      "NEGLASARI",
+      "TEGALLEGA"
+    ],
+    "NAGRAK": [
+      "BABAKAN PANJANG",
+      "BALEKAMBANG",
+      "CIHANYAWAR",
+      "PAWENANG"
+    ],
+    "NYALINDUNG": [
+      "CIJANGKAR",
+      "CISITU"
+    ],
+    "PALABUHANRATU": [
+      "BUNIWANGI",
+      "CIBODAS",
+      "CIKADU",
+      "PASIRSUREN"
+    ],
+    "PARAKANSALAK": [
+      "BOJONGASIH",
+      "BOJONG LONGOK",
+      "PARAKAN SALAK",
+      "SUKATANI"
+    ],
+    "PARUNGKUDA": [
+      "PONDOKKASO LANDEUH"
+    ],
+    "PURABAYA": [
+      "CITAMIANG",
+      "MARGALUYU",
+      "NEGLASARI"
+    ],
+    "SAGARANTEN": [
+      "HEGARMANAH"
+    ],
+    "SIMPENAN": [
+      "CIBUNTU",
+      "CIDADAP",
+      "CIHAUR",
+      "LOJI"
+    ],
+    "SUKALARANG": [
+      "SUKAMAJU",
+      "TITISAN"
+    ],
+    "SUKARAJA": [
+      "LIMBANGAN",
+      "MARGALUYU",
+      "SELAWI",
+      "SUKAMEKAR"
+    ],
+    "SURADE": [
+      "CIPEUNDEUY",
+      "JAGAMUKTI",
+      "KADALEMAN",
+      "SIRNASARI",
+      "SUKATANI",
+      "SURADE"
+    ],
+    "WALURAN": [
+      "CARINGINNUNGGAL",
+      "MEKARMUKTI",
+      "SUKAMUKTI",
+      "WALURAN",
+      "WALURAN MANDIRI"
+    ],
+    "WARUNGKIARA": [
+      "BANTARKALONG",
+      "BOJONGKERTA",
+      "DAMARRAJA",
+      "GIRIJAYA",
+      "HEGARMANAH",
+      "SIRNAJAYA",
+      "TARISI",
+      "UBRUG",
+      "WARUNGKIARA"
+    ]
+  },
+  "KAB SUMEDANG": {
+    "BUAHDUA": [
+      "BOJONGLOA",
+      "BUAHDUA",
+      "CIKURUBUK",
+      "HARIANG",
+      "KARANGBUNGUR",
+      "PANYINDANGAN"
+    ],
+    "CIBUGEL": [
+      "BUANAMEKAR",
+      "CIPASANG",
+      "JAYAMEKAR",
+      "SUKARAJA",
+      "TAMANSARI"
+    ],
+    "CIMALAKA": [
+      "CIBEUREUM KULON",
+      "PADASARI",
+      "TRUNAMANGGALA"
+    ],
+    "CIMANGGUNG": [
+      "CIHANJUANG",
+      "CIKAHURIPAN",
+      "CIMANGGUNG",
+      "PASIRNANJUNG",
+      "SAWAHDADAP",
+      "SINDANGGALIH",
+      "SINDULANG",
+      "SUKADANA",
+      "TEGALMANGGUNG"
+    ],
+    "CISITU": [
+      "CIMARGA",
+      "LINGGAJAYA"
+    ],
+    "CONGGEANG": [
+      "CACABAN",
+      "CIPAMEKAR",
+      "CONGGEANG KULON",
+      "JAMBU",
+      "KARANG LAYUNG",
+      "NARIMBANG",
+      "PADAASIH"
+    ],
+    "DARMARAJA": [
+      "CIPEUTEUY",
+      "DARMAJAYA",
+      "DARMARAJA",
+      "RANGGON"
+    ],
+    "GANEAS": [
+      "CIKONDANG",
+      "CIKONENG",
+      "DAYEUHLUHUR",
+      "SUKALUYU",
+      "SUKAWENING",
+      "TANJUNGHURIP"
+    ],
+    "JATIGEDE": [
+      "CIRANGGEM"
+    ],
+    "JATINANGOR": [
+      "CILAYUNG",
+      "CILELES",
+      "CISEMPUR",
+      "JATIMUKTI",
+      "JATIROKE"
+    ],
+    "JATINUNGGAL": [
+      "CIMANINTIN",
+      "CIPEUNDEUY",
+      "SUKAMANAH"
+    ],
+    "PAMULIHAN": [
+      "CIGENDEL",
+      "CILEMBU",
+      "CIMARIAS",
+      "CIPTASARI",
+      "CITALI",
+      "PAMULIHAN",
+      "SUKAWANGI"
+    ],
+    "PASEH": [
+      "BONGKOK",
+      "CIJAMBE",
+      "PADANAN",
+      "PASIRREUNGIT"
+    ],
+    "RANCAKALONG": [
+      "CIBUNAR",
+      "NAGARAWANGI",
+      "PAMEKARAN",
+      "PANGADEGAN",
+      "PASIRBIRU",
+      "RANCAKALONG",
+      "SUKASIRNARASA"
+    ],
+    "SITURAJA": [
+      "KADUWULUNG"
+    ],
+    "SUKASARI": [
+      "BANYURESMI",
+      "GENTENG",
+      "NANGGERANG",
+      "SINDANGSARI",
+      "SUKASARI"
+    ],
+    "SUMEDANG SELATAN": [
+      "CIPANCAR",
+      "CITENGAH",
+      "MARGALAKSANA",
+      "MEKAR RAHAYU"
+    ],
+    "SUMEDANG UTARA": [
+      "GIRIMUKTI",
+      "MARGAMUKTI",
+      "MEKARJAYA",
+      "RANCAMULYA"
+    ],
+    "SURIAN": [
+      "PAMEKARSARI",
+      "SURIAMEDAL",
+      "SURIAN"
+    ],
+    "TANJUNGKERTA": [
+      "BANYUASIH",
+      "GUNTURMEKAR",
+      "MULYAMEKAR",
+      "SUKAMANTRI",
+      "TANJUNGMEKAR",
+      "TANJUNGMULYA"
+    ],
+    "TANJUNGMEDAR": [
+      "JINGKANG",
+      "KERTAMUKTI",
+      "SUKAMUKTI",
+      "TANJUNGWANGI"
+    ],
+    "TANJUNGSARI": [
+      "CIJAMBU",
+      "KADAKAJAYA",
+      "MARGALUYU",
+      "PASIGARAN"
+    ],
+    "TOMO": [
+      "DARMAWANGI",
+      "JEMBARWANGI",
+      "MEKARWANGI"
+    ],
+    "UJUNGJAYA": [
+      "CIBULUH",
+      "SAKURJAYA"
+    ],
+    "WADO": [
+      "CIKAREO SELATAN",
+      "CIKAREO UTARA",
+      "CILENGKRANG",
+      "CIMUNGKAL",
+      "CISURAT",
+      "GANJARESIK",
+      "MULYAJAYA",
+      "SUKAJADI",
+      "WADO"
+    ]
+  },
+  "KAB TASIKMALAYA": {
+    "BANTARKALONG": [
+      "PARAKANHONJE",
+      "SUKAMAJU"
+    ],
+    "BOJONGASIH": [
+      "GIRIJAYA",
+      "SINDANGSARI",
+      "TOBLONGAN"
+    ],
+    "BOJONGGAMBIR": [
+      "KERTANEGLA",
+      "WANDASARI"
+    ],
+    "CIAWI": [
+      "CITAMBA",
+      "GOMBONG",
+      "KERTAMUKTI",
+      "MARGASARI",
+      "PASIRHUNI"
+    ],
+    "CIBALONG": [
+      "EUREUNPALAY"
+    ],
+    "CIGALONTANG": [
+      "CIDUGALEUN",
+      "CIGALONTANG",
+      "JAYAPURA",
+      "KERSAMAJU",
+      "LENGKONGJAYA",
+      "NANGERANG",
+      "NANGTANG",
+      "PUSPAMUKTI",
+      "SIRNAPUTRA",
+      "SIRNARAJA",
+      "SUKAMANAH",
+      "TANJUNGKARANG"
+    ],
+    "CIKALONG": [
+      "CIBEBER",
+      "CIDADALI",
+      "CIKADU",
+      "CIKALONG",
+      "CIKANCRA",
+      "CIMANUK",
+      "KALAPAGENEP",
+      "KUBANGSARI",
+      "MANDALAJAYA",
+      "PANYIARAN",
+      "SINDANGJAYA",
+      "SINGKIR",
+      "TONJONGSARI"
+    ],
+    "CINEAM": [
+      "ANCOL",
+      "CIAMPANAN",
+      "CIJULANG",
+      "CISARUA",
+      "MADIASARI"
+    ],
+    "CIPATUJAH": [
+      "CIANDUM",
+      "CIHERAS",
+      "CIKAWUNGGADING",
+      "CIPANAS",
+      "CIPATUJAH",
+      "KERTASARI",
+      "NAGROG",
+      "PADAWARAS",
+      "PAMEUTINGAN",
+      "SINDANGKERTA"
+    ],
+    "CISAYONG": [
+      "CILEULEUS",
+      "PURWASARI",
+      "SANTANAMEKAR",
+      "SUKAMUKTI",
+      "SUKASETIA"
+    ],
+    "CULAMEGA": [
+      "BOJONGSARI",
+      "CINTABODAS",
+      "CIPICUNG",
+      "MEKARLAKSANA"
+    ],
+    "JATIWARAS": [
+      "CIWARAK",
+      "JATIWARAS",
+      "KERTARAHAYU",
+      "MANDALAMEKAR",
+      "NEGLASARI",
+      "PAPAYAN",
+      "SUKAKERTA"
+    ],
+    "KADIPATEN": [
+      "BUNIASIH",
+      "CIBAHAYU",
+      "DIRGAHAYU",
+      "KADIPATEN",
+      "MEKARSARI"
+    ],
+    "KARANG JAYA": [
+      "CITALAHAB",
+      "KARANG JAYA",
+      "KARANGLAYUNG",
+      "SIRNAJAYA"
+    ],
+    "KARANGNUNGGAL": [
+      "KARANGMEKAR",
+      "SARIMANGGU"
+    ],
+    "LEUWISARI": [
+      "CIGADOG",
+      "LINGGAMULYA",
+      "LINGGAWANGI",
+      "MANDALAGIRI"
+    ],
+    "MANONJAYA": [
+      "BATUSUMUR",
+      "CIBEBER",
+      "CIHAUR",
+      "CILANGKAP",
+      "GUNAJAYA",
+      "KALIMANGGIS",
+      "KAMULYAN",
+      "MANONJAYA",
+      "MARGAHAYU",
+      "MARGALUYU",
+      "PASIRBATANG",
+      "PASIRPANJANG"
+    ],
+    "PADAKEMBANG": [
+      "PADAKEMBANG"
+    ],
+    "PAGERAGEUNG": [
+      "CIPACING",
+      "GURANTENG",
+      "NANGGEWER",
+      "SUKAMAJU",
+      "SUKAPADA",
+      "TANJUNGKERTA"
+    ],
+    "PANCATENGAH": [
+      "CIBUNIASIH",
+      "MEKARSARI"
+    ],
+    "PUSPAHIANG": [
+      "CIMANGGU",
+      "LUYUBAKTI",
+      "MANDALASARI",
+      "PUSPAHIANG",
+      "PUSPAJAYA",
+      "PUSPARAHAYU",
+      "PUSPASARI",
+      "SUKASARI"
+    ],
+    "RAJAPOLAH": [
+      "MANGGUNGJAYA"
+    ],
+    "SALAWU": [
+      "JAHIANG",
+      "KARANGMUKTI",
+      "KAWUNGSARI",
+      "MARGALAKSANA",
+      "NEGLASARI",
+      "SALAWU",
+      "SERANG",
+      "SUKARASA",
+      "SUNDAWENANG",
+      "TENJOWARINGIN"
+    ],
+    "SODONGHILIR": [
+      "CIKALONG",
+      "CUKANGJAYAGUNA",
+      "CUKANGKAWUNG",
+      "MUNCANG",
+      "PARUMASAN",
+      "RAKSAJAYA",
+      "SEPATNUNGGAL",
+      "SODONGHILIR",
+      "SUKABAKTI"
+    ],
+    "SUKAHENING": [
+      "BANYURASA",
+      "BANYURESMI",
+      "KIARAJANGKUNG",
+      "KUDADEPA",
+      "SUKAHENING",
+      "SUNDAKERTA"
+    ],
+    "SUKARAJA": [
+      "LEUWIBUDAH"
+    ],
+    "SUKARATU": [
+      "INDRAJAYA",
+      "LINGGAJATI",
+      "SUKARATU"
+    ],
+    "TARAJU": [
+      "BANYUASIH",
+      "PAGERALAM",
+      "PURWARAHAYU",
+      "RAKSASARI",
+      "SINGASARI",
+      "TARAJU"
+    ]
+  },
+  "KOTA BANJAR": {
+    "BANJAR": [
+      "BALOKANG",
+      "BANJAR",
+      "CIBEUREUM",
+      "JAJAWAR"
+    ],
+    "LANGENSARI": [
+      "BOJONGKANTONG",
+      "LANGENSARI",
+      "REJASARI",
+      "WARINGINSARI"
+    ],
+    "PATARUMAN": [
+      "BATULAWANG",
+      "BINANGUN",
+      "HEGARSARI",
+      "KARYAMUKTI",
+      "MULYASARI",
+      "PATARUMAN",
+      "SINARTANJUNG",
+      "SUKAMUKTI"
+    ],
+    "PURWAHARJA": [
+      "MEKARHARJA",
+      "PURWAHARJA",
+      "RAHARJA"
+    ]
+  },
+  "KOTA BOGOR": {
+    "BOGOR UTARA": [
+      "CILUAR"
+    ],
+    "TANAH SAREAL": [
+      "MEKAR WANGI"
+    ]
+  },
+  "KOTA TASIKMALAYA": {
+    "BUNGURSARI": [
+      "BANTARSARI",
+      "BUNGURSARI",
+      "CIBUNIGEULIS",
+      "SUKAJAYA",
+      "SUKALAKSANA",
+      "SUKAMULYA",
+      "SUKARINDIK"
+    ],
+    "CIBEUREUM": [
+      "CIHERANG",
+      "KERSANAGARA",
+      "KOTA BARU",
+      "SETIAJAYA",
+      "SETIANAGARA",
+      "SETIARATU"
+    ],
+    "CIHIDEUNG": [
+      "TUGUJAYA",
+      "TUGURAJA"
+    ],
+    "CIPEDES": [
+      "CIPEDES",
+      "PANGLAYUNGAN",
+      "SUKAMANAH"
+    ],
+    "INDIHIANG": [
+      "SIRNAGALIH",
+      "SUKAMAJU KALER",
+      "SUKAMAJU KIDUL"
+    ],
+    "KAWALU": [
+      "CIBEUTI",
+      "GUNUNG GEDE",
+      "GUNUNG TANDALA",
+      "KARANGANYAR",
+      "KERSAMENAK",
+      "LEUWILIANG",
+      "TALAGASARI",
+      "TANJUNG",
+      "URUG"
+    ],
+    "MANGKUBUMI": [
+      "CIGANTANG",
+      "CIPARI",
+      "CIPAWITRA",
+      "KARIKIL",
+      "LINGGAJAYA",
+      "MANGKUBUMI",
+      "SAMBONGJAYA",
+      "SAMBONGPARI"
+    ],
+    "PURBARATU": [
+      "SINGKUP",
+      "SUKAMENAK",
+      "SUKANAGARA"
+    ],
+    "TAMANSARI": [
+      "MUGARSARI",
+      "MULYASARI",
+      "SETIAMULYA",
+      "SUKAHURIP",
+      "SUMELAP",
+      "TAMANJAYA",
+      "TAMANSARI"
+    ],
+    "TAWANG": [
+      "KAHURIPAN"
+    ]
+  }
+}
